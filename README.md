@@ -1,3 +1,3 @@
 # Assignments-2
 
-In this assignment we are going to work on a
+In this assignment we are going to work on a project
