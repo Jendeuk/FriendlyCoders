@@ -74,14 +74,14 @@
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 50%;
-    rotate: 45deg;
-    -webkit-transform: rotatey(180deg);
-            transform: rotatey(180deg);
+    -webkit-transform: rotatey(180deg) rotate(45deg);
+            transform: rotatey(180deg) rotate(45deg);
   }
   to {
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 0%;
+    rotate: 0deg;
   }
 }
 
@@ -90,14 +90,14 @@
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 50%;
-    rotate: 45deg;
-    -webkit-transform: rotatey(180deg);
-            transform: rotatey(180deg);
+    -webkit-transform: rotatey(180deg) rotate(45deg);
+            transform: rotatey(180deg) rotate(45deg);
   }
   to {
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 0%;
+    rotate: 0deg;
   }
 }
 
