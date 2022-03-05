@@ -41,31 +41,31 @@
 
 @-webkit-keyframes zoom-in-zoom-out {
   0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes zoom-in-zoom-out {
   0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -78,6 +78,7 @@
             transform: rotatey(180deg) rotate(45deg);
   }
   to {
+    rotate: 0deg;
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 0%;
@@ -94,6 +95,7 @@
             transform: rotatey(180deg) rotate(45deg);
   }
   to {
+    rotate: 0deg;
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 0%;
