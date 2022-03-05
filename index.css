@@ -102,7 +102,7 @@
 }
 
 /* The element to apply the animation to */
-div {
+.box3 {
   width: 100px;
   height: 100px;
   -webkit-animation-name: box3;
@@ -115,7 +115,7 @@ div {
           animation-direction: alternate;
 }
 
-box3 {
+.box3 {
   z-index: 4;
 }
 /*# sourceMappingURL=index.css.map */

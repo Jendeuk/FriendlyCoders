@@ -1,9 +1,8 @@
-
-
-
- @keyframes box3 {
-    from {background: linear-gradient(skyblue, white);
+@keyframes box3 {
+  from {
+    background: linear-gradient(skyblue, white);
     border-radius: 50%;
+
     transform: rotatey(180deg) rotate(45deg);
     
     
@@ -13,20 +12,25 @@
     border-radius: 0%;
     rotate: 0deg;
 }
+
   }
-  
-  /* The element to apply the animation to */
-  div {
-    width: 100px;
-    height: 100px;
-    
-    animation-name: box3;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  } 
+  to {
+    background: linear-gradient(skyblue, white);
+    border-radius: 0%;
+  }
+}
 
-box3 {
-    z-index: 4;
+/* The element to apply the animation to */
+.box3 {
+  width: 100px;
+  height: 100px;
 
+  animation-name: box3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.box3 {
+  z-index: 4;
 }
