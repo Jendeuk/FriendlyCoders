@@ -4,13 +4,15 @@
  @keyframes box3 {
     from {background: linear-gradient(skyblue, white);
     border-radius: 50%;
-    rotate: 45deg;
-    transform: rotatey(180deg);
+    transform: rotatey(180deg) rotate(45deg);
+    
     
     
     }
     to {background: linear-gradient(skyblue, white);
-    border-radius: 0%;}
+    border-radius: 0%;
+    rotate: 0deg;
+}
   }
   
   /* The element to apply the animation to */
