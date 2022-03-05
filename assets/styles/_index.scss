@@ -5,3 +5,22 @@
 @import "box1";
 @import "_box2";
 @import "_box3";
+
+
+.box1 {
+    background-color: rgb(127, 127, 201);
+    width: 100px;
+    height: 100px;
+    animation-name: grow;
+    animation-duration: 10s;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(100);
+    }
+}
