@@ -2,31 +2,42 @@
   background-color: #7f7fc9;
   width: 100px;
   height: 100px;
-  -webkit-animation-name: rotat;
-          animation-name: rotat;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  position: relative;
 }
 
-@-webkit-keyframes rotat {
-  0% {
+@-webkit-keyframes move {
+  from {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+    left: 0px;
   }
-  100% {
+  to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    left: 500px;
   }
 }
 
-@keyframes rotat {
-  0% {
+@keyframes move {
+  from {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+    left: 0px;
   }
-  100% {
+  to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    left: 500px;
   }
 }
 
