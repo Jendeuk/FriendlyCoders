@@ -1,7 +1,4 @@
 # Assignments-2
-What the project does
-Why the project is useful
-How users can get started with the project
-Where users can get help with your project
-Which technology is used
-Who maintains and contributes to the project
+This project is based on the sustainable development goal of the united nation to inform about goal number 14. This goal is about to conservation and sustainable use of the oceans, seas, and marine resources for sustainable development.
+
+We have decided to present these issues through a parallax scrolly telling with the use of animation.
