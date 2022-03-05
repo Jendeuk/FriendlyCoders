@@ -141,4 +141,72 @@
 .box3 {
   z-index: 4;
 }
+
+@media (prefers-reduced-motion) {
+  .box1 {
+    -webkit-animation-name: move;
+            animation-name: move;
+  }
+  .box2 {
+    -webkit-animation-name: zoom-in-zoom-out;
+            animation-name: zoom-in-zoom-out;
+  }
+  .box3 {
+    -webkit-animation-name: box3;
+            animation-name: box3;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .box1 {
+    background-color: purple;
+  }
+  .box2 {
+    background-color: crimson;
+  }
+  .box3 {
+    background-color: blue;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .box1 {
+    background-color: #7f7fc9;
+  }
+  .box2 {
+    background-color: pink;
+  }
+  .box3 {
+    background-color: skyblue;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body > div {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media (orientation: landscape) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=index.css.map */

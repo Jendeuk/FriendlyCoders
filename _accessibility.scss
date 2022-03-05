@@ -1,0 +1,55 @@
+@media (prefers-reduced-motion) {
+    .box1 {
+      animation-name: move;
+    }
+    .box2 {
+        animation-name: zoom-in-zoom-out;
+    }
+    .box3{
+        animation-name: box3;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .box1 {
+        background-color: purple;
+    }
+    .box2 {
+        background-color: crimson;
+    }
+    .box3 {
+        background-color: blue;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .box1 {
+        background-color: rgb(127, 127, 201);
+    }
+    .box2 {
+        background-color: pink;
+    }
+    .box3 {
+        background-color: skyblue;
+    }
+}
+
+body {
+    display: flex;
+}
+body > div {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media (orientation: landscape) {
+    body {
+      flex-direction: row;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    body {
+      flex-direction: column;
+    }
+  }
