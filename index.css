@@ -2,31 +2,31 @@
   background-color: #7f7fc9;
   width: 100px;
   height: 100px;
-  -webkit-animation-name: grow;
-          animation-name: grow;
+  -webkit-animation-name: rotat;
+          animation-name: rotat;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
 }
 
-@-webkit-keyframes grow {
+@-webkit-keyframes rotat {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
-    -webkit-transform: scale(100);
-            transform: scale(100);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes grow {
+@keyframes rotat {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
-    -webkit-transform: scale(100);
-            transform: scale(100);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
