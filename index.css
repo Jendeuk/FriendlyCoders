@@ -89,11 +89,16 @@
             transform: rotatey(180deg) rotate(45deg);
   }
   to {
-    rotate: 0deg;
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 0%;
     rotate: 0deg;
+  }
+  to {
+    rotate: 0deg;
+    background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
+    background: linear-gradient(skyblue, white);
+    border-radius: 0%;
   }
 }
 
@@ -106,11 +111,16 @@
             transform: rotatey(180deg) rotate(45deg);
   }
   to {
-    rotate: 0deg;
     background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
     background: linear-gradient(skyblue, white);
     border-radius: 0%;
     rotate: 0deg;
+  }
+  to {
+    rotate: 0deg;
+    background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
+    background: linear-gradient(skyblue, white);
+    border-radius: 0%;
   }
 }
 
