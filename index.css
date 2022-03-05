@@ -69,9 +69,53 @@
   }
 }
 
-.box3 {
+@-webkit-keyframes box3 {
+  from {
+    background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
+    background: linear-gradient(skyblue, white);
+    border-radius: 50%;
+    rotate: 45deg;
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
+  }
+  to {
+    background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
+    background: linear-gradient(skyblue, white);
+    border-radius: 0%;
+  }
+}
+
+@keyframes box3 {
+  from {
+    background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
+    background: linear-gradient(skyblue, white);
+    border-radius: 50%;
+    rotate: 45deg;
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
+  }
+  to {
+    background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(white));
+    background: linear-gradient(skyblue, white);
+    border-radius: 0%;
+  }
+}
+
+/* The element to apply the animation to */
+div {
   width: 100px;
   height: 100px;
-  background-color: blueviolet;
+  -webkit-animation-name: box3;
+          animation-name: box3;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+box3 {
+  z-index: 4;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,5 +1,30 @@
-.box3 {
+
+
+
+ @keyframes box3 {
+    from {background: linear-gradient(skyblue, white);
+    border-radius: 50%;
+    rotate: 45deg;
+    transform: rotatey(180deg);
+    
+    
+    }
+    to {background: linear-gradient(skyblue, white);
+    border-radius: 0%;}
+  }
+  
+  /* The element to apply the animation to */
+  div {
     width: 100px;
     height: 100px;
-    background-color: blueviolet;
+    
+    animation-name: box3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  } 
+
+box3 {
+    z-index: 4;
+
 }
