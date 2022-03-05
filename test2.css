@@ -1,0 +1,77 @@
+.box1 {
+  background-color: #7f7fc9;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(100);
+            transform: scale(100);
+  }
+}
+
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(100);
+            transform: scale(100);
+  }
+}
+
+.box2 {
+  margin: 25px;
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: zoom-in-zoom-out 1s ease infinite;
+          animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@-webkit-keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+}
+/*# sourceMappingURL=test2.css.map */
