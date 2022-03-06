@@ -26,6 +26,40 @@
 }
 
 
+.box--hallvard {
+    animation-name: box3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+    
+
+}
+
+@keyframes box3 {
+    from {
+      background: linear-gradient(skyblue, white);
+      border-radius: 50%;
+  
+      transform: rotatey(180deg) rotate(45deg);
+      
+      
+      
+      }
+      to {background: linear-gradient(skyblue, white);
+      border-radius: 0%;
+      rotate: 0deg;
+  
+  
+    }
+    to {
+      rotate: 0deg;
+      background: linear-gradient(skyblue, white);
+      border-radius: 0%;
+    }
+}
+
+
 
 @media (prefers-reduced-motion) {
     .linn {
@@ -34,7 +68,7 @@
     .box2 {
         animation-name: zoom-in-zoom-out;
     }
-    .box3{
+    .hallvard{
         animation-name: box3;
     }
   }
@@ -46,7 +80,7 @@
     .box2 {
         background-color: crimson;
     }
-    .box3 {
+    .hallvard {
         background-color: blue;
     }
 }
@@ -58,7 +92,7 @@
     .box2 {
         background-color: pink;
     }
-    .box3 {
+    .hallvard{
         background-color: skyblue;
     }
 }
