@@ -81,37 +81,37 @@
 
 
 @media (prefers-reduced-motion) {
-    .linn {
+    .box--linn {
       animation-name: move;
     }
-    .box2 {
+    .box--jenny {
         animation-name: zoom-in-zoom-out;
     }
-    .hallvard{
+    .box--hallvard{
         animation-name: box3;
     }
   }
 
   @media (prefers-color-scheme: light) {
-    .linn {
+    .box--linn {
         background-color: purple;
     }
-    .box2 {
+    .box--jenny {
         background-color: crimson;
     }
-    .hallvard {
+    .box--hallvard {
         background-color: blue;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    .linn {
+    .box--linn {
         background-color: rgb(127, 127, 201);
     }
-    .box2 {
+    .box--jenny {
         background-color: pink;
     }
-    .hallvard{
+    .box--hallvard{
         background-color: skyblue;
     }
 }
