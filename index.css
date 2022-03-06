@@ -142,6 +142,39 @@
   z-index: 4;
 }
 
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box--linn {
+  background-color: #7f7fc9;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes move {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    left: 0px;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    left: 500px;
+  }
+}
+
 @media (prefers-reduced-motion) {
   .box1 {
     -webkit-animation-name: move;

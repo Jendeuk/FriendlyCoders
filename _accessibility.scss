@@ -1,5 +1,34 @@
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box--linn {
+    background-color: rgb(127, 127, 201);
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0);
+        left: 0px;
+    }
+
+    to {
+        transform: rotate(360deg);
+        left: 500px;
+    }
+}
+
+.box--jenny
+
 @media (prefers-reduced-motion) {
-    .box1 {
+    .linn {
       animation-name: move;
     }
     .box2 {
@@ -11,7 +40,7 @@
   }
 
   @media (prefers-color-scheme: light) {
-    .box1 {
+    .linn {
         background-color: purple;
     }
     .box2 {
@@ -23,7 +52,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .box1 {
+    .linn {
         background-color: rgb(127, 127, 201);
     }
     .box2 {
