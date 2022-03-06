@@ -139,40 +139,40 @@
 }
 
 @media (prefers-reduced-motion) {
-  .linn {
+  .box--linn {
     -webkit-animation-name: move;
             animation-name: move;
   }
-  .box2 {
+  .box--jenny {
     -webkit-animation-name: zoom-in-zoom-out;
             animation-name: zoom-in-zoom-out;
   }
-  .hallvard {
+  .box--hallvard {
     -webkit-animation-name: box3;
             animation-name: box3;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .linn {
+  .box--linn {
     background-color: purple;
   }
-  .box2 {
+  .box--jenny {
     background-color: crimson;
   }
-  .hallvard {
+  .box--hallvard {
     background-color: blue;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .linn {
+  .box--linn {
     background-color: #7f7fc9;
   }
-  .box2 {
+  .box--jenny {
     background-color: pink;
   }
-  .hallvard {
+  .box--hallvard {
     background-color: skyblue;
   }
 }
