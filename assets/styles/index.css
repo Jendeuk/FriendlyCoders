@@ -1,8 +1,3 @@
-.box {
-  width: 100px;
-  height: 100px;
-}
-
 .box--linn {
   background-color: #7f7fc9;
   -webkit-animation-name: move;
@@ -204,5 +199,10 @@ body > div {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.box {
+  width: 500px;
+  height: 100px;
 }
 /*# sourceMappingURL=index.css.map */
