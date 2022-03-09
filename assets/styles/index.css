@@ -137,14 +137,20 @@
   .box--linn {
     -webkit-animation-name: move;
             animation-name: move;
+    -webkit-animation: none;
+            animation: none;
   }
   .box--jenny {
     -webkit-animation-name: zoom-in-zoom-out;
             animation-name: zoom-in-zoom-out;
+    -webkit-animation: none;
+            animation: none;
   }
   .box--hallvard {
     -webkit-animation-name: box3;
             animation-name: box3;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
