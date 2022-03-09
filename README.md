@@ -8,13 +8,13 @@ To get started with the project you can look at the Figma sketch: https://www.fi
 
 Then you can:
 1.	Install git on computer:
-Linux: $sudo dnf install git-all or $ sudo apt install git-all
-macOS: git –version
-Windows: https://git-scm.com/download/win
+- Linux: $sudo dnf install git-all or $ sudo apt install git-all
+- macOS: git –version
+- Windows: https://git-scm.com/download/win
 2.	Download extensions on Visual Studio Code:
-Path Intellisense
-Live Sass Compiler
-Git Pull Requests and Issues
+- Path Intellisense
+- Live Sass Compiler
+- Git Pull Requests and Issues
 3.	Log inn to GitHub on Visual Studio Code
 4.	Copy the HTTPS link
 5.	Open source control on Visual Studio Code and click on clone repository
