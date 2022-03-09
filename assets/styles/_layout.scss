@@ -80,12 +80,15 @@
 @media (prefers-reduced-motion) {
     .box--linn {
       animation-name: move;
+      animation: none;
     }
     .box--jenny {
         animation-name: zoom-in-zoom-out;
+        animation: none;
     }
     .box--hallvard{
         animation-name: box3;
+        animation: none;
     }
 }
 
