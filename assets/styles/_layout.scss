@@ -1,10 +1,7 @@
-.box {
-    width: 100px;
-    height: 100px;
-}
+@import "_colors";
 
 .box--linn {
-    background-color: rgb(127, 127, 201);
+    background-color: $linn-dark;
     animation-name: move;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -15,7 +12,7 @@
 
 .box--jenny {
     margin: 25px;
-    background-color: pink;
+    background-color: $jenny-dark;
     animation: zoom-in-zoom-out 1s ease infinite;
 }
 
@@ -94,25 +91,25 @@
 
 @media (prefers-color-scheme: light) {
     .box--linn {
-        background-color: purple;
+        background-color: $linn-light;
     }
     .box--jenny {
-        background-color: crimson;
+        background-color: $jenny-light;
     }
     .box--hallvard {
-        background-color: blue;
+        background-color: $hallvard-light;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .box--linn {
-        background-color: rgb(127, 127, 201);
+        background-color: $linn-dark;
     }
     .box--jenny {
-        background-color: pink;
+        background-color: $jenny-dark;
     }
     .box--hallvard{
-        background-color: skyblue;
+        background-color: $hallvard-dark;
     }
 }
 
