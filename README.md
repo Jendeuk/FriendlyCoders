@@ -19,7 +19,6 @@ Git Pull Requests and Issues
 4.	Copy the HTTPS link
 5.	Open source control on Visual Studio Code and click on clone repository
 6.	Paste in the link and select a Repository Location and open
-![image](https://user-images.githubusercontent.com/99718817/157553895-2c9e66fe-a1bf-4461-8240-b54fd1ea28b7.png)
 
 If you want to help with the project, you can contact the project owner via this mail: jennynl@stud.ntnu.no for further collaboration.
 
