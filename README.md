@@ -6,7 +6,7 @@ This project is useful because it informs and educates about the problem that is
 
 To get started with the project you can look at the Figma sketch: https://www.figma.com/file/l0dvhjg02OfrQQgOVcaXLb/Assignment-2---Animation-Prototype?node-id=0%3A1. 
 
-Then you can:
+## Installing
 1.	Install git on computer:
 - Linux: $sudo dnf install git-all or $ sudo apt install git-all
 - macOS: git –version
