@@ -12,7 +12,10 @@ To get started with the project you can look at the Figma sketch: https://www.fi
   ``` 
   $sudo dnf install git-all or $ sudo apt install git-all
   ``` 
-- macOS: git –version
+- macOS: 
+  ``` 
+  git –version
+  ``` 
 - Windows: https://git-scm.com/download/win
 - Git Pull Requests and Issues
 3.	How to setup SASS in VSCode:
