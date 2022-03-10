@@ -20,7 +20,10 @@ To get started with the project you can look at the Figma sketch: https://www.fi
 - Git Pull Requests and Issues
 3.	How to setup SASS in VSCode:
 - Install node and npm
-- Command line: npm install -g sass.
+- Command line: 
+   ``` 
+  npm install -g sass.
+   ``` 
 - Install extension live Sass Compiler in VSCode that watches your SCSS files.
 3.	Log inn to GitHub on Visual Studio Code
 4.	Copy the HTTPS link
