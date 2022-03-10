@@ -27,9 +27,12 @@ To get started with the project you can look at the Figma sketch: https://www.fi
 5.	Open source control on Visual Studio Code and click on clone repository
 6.	Paste in the link and select a Repository Location and open
 
+## Contact information 
 If you want to help with the project, you can contact the project owner via this mail: jennynl@stud.ntnu.no for further collaboration.
 
+## Which technology is used
 The technology used in this project was Figma for preparation and HTML for the structure of the page, SASS for styling and CSS for connecting the HTML and SASS. To style you have to install SASS - We recommend using Visual Studio Code VSC as a tool. 
 Git is a tool which gives you push/pull/commit features.
 
+## Who maintains and contributes to the project
 People responsible for maintaining and contributing to the project (GitHub usernames): Jendeuk, linnmarion, hgrotli.
