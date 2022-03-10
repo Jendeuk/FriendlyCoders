@@ -27,8 +27,11 @@ To get started with the project you can look at the Figma sketch: https://www.fi
 - Install extension live Sass Compiler in VSCode that watches your SCSS files.
 3.	Log inn to GitHub on Visual Studio Code
 4.	Copy the HTTPS link
-5.	Open source control on Visual Studio Code and click on clone repository
-6.	Paste in the link and select a Repository Location and open
+      ``` 
+      git clone https://github.com/Jendeuk/FriendlyCoders.git
+      ```
+6.	Open source control on Visual Studio Code and click on clone repository
+7.	Paste in the link and select a Repository Location and open
 
 ## Contact information 
 If you want to help with the project, you can contact the project owner via this mail: jennynl@stud.ntnu.no for further collaboration.
