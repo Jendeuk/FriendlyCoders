@@ -8,7 +8,10 @@ To get started with the project you can look at the Figma sketch: https://www.fi
 
 ## Installing
 1.	Install git on computer:
-- Linux: $sudo dnf install git-all or $ sudo apt install git-all
+- Linux:
+  ``` 
+  $sudo dnf install git-all or $ sudo apt install git-all
+  ``` 
 - macOS: git –version
 - Windows: https://git-scm.com/download/win
 - Git Pull Requests and Issues
