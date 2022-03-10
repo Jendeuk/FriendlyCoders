@@ -1,11 +1,18 @@
-$linn-dark: rgb(127, 127, 201);
 
-$linn-light: purple;
 
-$jenny-dark: pink;
+$linn: purple;
 
-$jenny-light: crimson;
 
-$hallvard-dark: skyblue;
 
-$hallvard-light: skyblue;
+$jenny: crimson;
+
+
+
+$colors: (
+linn--light: lighten($linn, 15%),
+linn--dark: darken($linn, 5%),
+jenny--dark: darken($jenny, 5%),
+jenny--light: lighten($jenny, 15%)
+
+
+);
