@@ -1,5 +1,33 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body > div {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media (orientation: landscape) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .box--linn {
-  background-color: #7f7fc9;
   -webkit-animation-name: move;
           animation-name: move;
   -webkit-animation-duration: 4s;
@@ -14,8 +42,6 @@
 }
 
 .box--jenny {
-  margin: 25px;
-  background-color: pink;
   -webkit-animation: zoom-in-zoom-out 1s ease infinite;
           animation: zoom-in-zoom-out 1s ease infinite;
 }
@@ -29,8 +55,6 @@
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  width: 100px;
-  height: 100px;
 }
 
 @-webkit-keyframes move {
@@ -156,10 +180,10 @@
 
 @media (prefers-color-scheme: light) {
   .box--linn {
-    background-color: purple;
+    background-color: #670067;
   }
   .box--jenny {
-    background-color: crimson;
+    background-color: #c51236;
   }
   .box--hallvard {
     background-color: skyblue;
@@ -168,47 +192,19 @@
 
 @media (prefers-color-scheme: dark) {
   .box--linn {
-    background-color: #7f7fc9;
+    background-color: #cd00cd;
   }
   .box--jenny {
-    background-color: pink;
+    background-color: #ef4e6e;
   }
   .box--hallvard {
     background-color: skyblue;
   }
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body > div {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-@media (orientation: landscape) {
-  body {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media (orientation: portrait) {
-  body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .box {
   width: 100px;
   height: 100px;
+  margin: 100px;
 }
 /*# sourceMappingURL=index.css.map */
