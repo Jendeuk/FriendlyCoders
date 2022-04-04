@@ -16,3 +16,12 @@ jenny--light: lighten($jenny, 15%)
 
 
 );
+
+$sky: deepskyblue;
+
+
+
+$sky-background: (
+    sky--light: lighten($sky, 35%),
+    sky--dark: darken($sky, 5%)
+);
