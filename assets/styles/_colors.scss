@@ -9,9 +9,12 @@ $colors: (
   jenny--light: lighten($jenny, 15%),
 );
 
-$sky: deepskyblue;
+$sky: #4CA9FE;
+$h: #D6EBF6;
 
 $sky-background: (
-  sky--light: lighten($sky, 35%),
-  sky--dark: darken($sky, 5%),
+  sky--light: lighten($sky, 0%),
+  sky--dark: darken($sky, 50%),
+  h--himmel: lighten($h, 0%),
 );
+
