@@ -20,6 +20,7 @@ body {
       flex-wrap: wrap;
   font-family: var(--font-family);
   overflow-x: hidden;
+  z-index: 0;
 }
 
 h1 {
@@ -31,19 +32,36 @@ body > div {
   margin-right: 100px;
 }
 
+svg {
+  z-index: 2;
+}
+
+section {
+  z-index: 2;
+}
+
 .ocean1 {
   background-color: red;
   width: 100vw;
   height: 6000px;
   padding: 0;
   margin: 0;
+  z-index: 2;
 }
 
 .intro {
   width: 30%;
-  margin: 0 auto;
-  padding-top: 10rem;
+  top: -20%;
+  margin-top: 40px;
+  padding-top: 15rem;
   text-align: center;
+  z-index: 1;
+  margin: 0 auto;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 35%;
 }
 
 .intro > h2 {
@@ -68,10 +86,17 @@ body > div {
   }
 }
 
-svg {
-  padding-top: 6rem;
+.svg {
+  padding-top: 24rem;
   width: 100vw;
   display: block;
+  z-index: 2;
+}
+
+.fish {
+  position: absolute;
+  left: 30%;
+  top: 3000px;
 }
 
 .box {
