@@ -114,7 +114,7 @@
 
 .svg {
     padding-top: 24rem;
-    width: 100vw;
+    width: 180vw;
     display: block;
     z-index: 2;
     
@@ -130,6 +130,31 @@
   scale: 0.5;
 
 }
+
+#wave1 {
+  animation: ud 7s infinite alternate;
+}
+
+#wave2 {
+  animation: ud 5s infinite alternate;
+}
+
+#wave3 {
+  animation: ud 3s infinite alternate;
+}
+
+@keyframes ud {
+  from {
+    transform: translateX(-35%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+ 
+
  
 @keyframes change {
   0%, 100% {transform: translateY(0);}
@@ -140,3 +165,4 @@
 
  
   
+

@@ -90,7 +90,7 @@ hr {
 }
 .svg {
   padding-top: 24rem;
-  width: 100vw;
+  width: 180vw;
   display: block;
   z-index: 2;
 }
@@ -116,6 +116,45 @@ hr {
   }
 }
 
+
+#wave1 {
+  -webkit-animation: ud 7s infinite alternate;
+          animation: ud 7s infinite alternate;
+}
+
+#wave2 {
+  -webkit-animation: ud 5s infinite alternate;
+          animation: ud 5s infinite alternate;
+}
+
+#wave3 {
+  -webkit-animation: ud 3s infinite alternate;
+          animation: ud 3s infinite alternate;
+}
+
+@-webkit-keyframes ud {
+  from {
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes ud {
+  from {
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+
 @keyframes change {
   0%, 100% {
     transform: translateY(0);
@@ -127,6 +166,7 @@ hr {
     transform: translateY(10px);
   }
 }
+
 .box {
   width: 100px;
   height: 100px;
