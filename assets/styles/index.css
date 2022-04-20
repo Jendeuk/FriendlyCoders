@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
@@ -13,18 +12,22 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   font-family: var(--font-family);
   overflow-x: hidden;
   z-index: 0;
+  color: #00274b;
 }
 
 h1 {
   font-size: 50px;
+}
+
+#goal14Logo {
+  margin: 25px;
+  width: 150px;
+  height: 150px;
 }
 
 body > div {
@@ -47,6 +50,7 @@ section {
   padding: 0;
   margin: 0;
   z-index: 2;
+  position: absolute;
 }
 
 .intro {
@@ -58,9 +62,7 @@ section {
   z-index: 1;
   margin: 0 auto;
   position: fixed;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   left: 35%;
 }
 
@@ -70,22 +72,22 @@ section {
 
 @media (orientation: landscape) {
   body {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
+
+
+hr {
+  margin-bottom: 600px;
+  background-color: white;
+}
+
 
 @media (orientation: portrait) {
   body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .svg {
   padding-top: 24rem;
   width: 180vw;
@@ -97,7 +99,23 @@ section {
   position: absolute;
   left: 30%;
   top: 3000px;
+  -webkit-animation: change 10s infinite alternate;
+          animation: change 10s infinite alternate;
+  scale: 0.5;
 }
+
+@-webkit-keyframes change {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateY(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateY(10px);
+  }
+}
+
 
 #wave1 {
   -webkit-animation: ud 7s infinite alternate;
@@ -136,6 +154,19 @@ section {
   }
 }
 
+
+@keyframes change {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateY(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateY(10px);
+  }
+}
+
 .box {
   width: 100px;
   height: 100px;
@@ -143,11 +174,9 @@ section {
 }
 
 .ocean1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4ca9fe), to(#00274b));
   background: linear-gradient(#4ca9fe, #00274b);
 }
 
 body {
   background-color: #d6ebf6;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
