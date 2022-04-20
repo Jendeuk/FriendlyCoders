@@ -97,6 +97,39 @@ section {
   position: absolute;
   left: 30%;
   top: 3000px;
+  -webkit-animation: change 10s infinite alternate;
+          animation: change 10s infinite alternate;
+  scale: 0.5;
+}
+
+@-webkit-keyframes change {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes change {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 
 .box {

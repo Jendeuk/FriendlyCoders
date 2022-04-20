@@ -117,11 +117,26 @@
     width: 100vw;
     display: block;
     z-index: 2;
+    
   }
 
 .fish {
   position: absolute;
   left: 30%;
-  top: 3000px
+  top: 3000px;
+  
+  animation: change 10s infinite alternate;
+  
+  scale: 0.5;
+
 }
  
+@keyframes change {
+  0%, 100% {transform: translateY(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);}
+  20%, 40%, 60%, 80% {transform: translateY(10px);}
+  
+}
+
+ 
+  
