@@ -28,7 +28,7 @@ body > div {
 }
 
 svg {
-  width: 100%;
+  width: 100vw;
   display: block;
 }
 
