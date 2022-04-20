@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
 }
 
@@ -12,8 +13,11 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: var(--font-family);
   overflow-x: hidden;
 }
@@ -25,6 +29,14 @@ h1 {
 body > div {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.ocean1 {
+  background-color: red;
+  width: 100vw;
+  height: 6000px;
+  padding: 0;
+  margin: 0;
 }
 
 .intro {
@@ -40,14 +52,22 @@ body > div {
 
 @media (orientation: landscape) {
   body {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
+
 @media (orientation: portrait) {
   body {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+
 svg {
   padding-top: 6rem;
   width: 100vw;
@@ -60,6 +80,12 @@ svg {
   margin: 100px;
 }
 
+.ocean1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4ca9fe), to(#00274b));
+  background: linear-gradient(#4ca9fe, #00274b);
+}
+
 body {
-  background: linear-gradient(#b3ecff, #00ace6);
-}/*# sourceMappingURL=index.css.map */
+  background-color: #d6ebf6;
+}
+/*# sourceMappingURL=index.css.map */
