@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--font-family);
+  overflow-x: hidden;
 }
 
 h1 {
