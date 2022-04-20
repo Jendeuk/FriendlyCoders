@@ -1,17 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
+:root {
+  /* using CSS variables makes the website
+  easy to edit and modify when we need to. */
+  --font-family: "M PLUS 1", sans-serif;
+}
+
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: 50px;
 }
 
 body > div {
@@ -32,22 +39,14 @@ body > div {
 
 @media (orientation: landscape) {
   body {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
-
 @media (orientation: portrait) {
   body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 svg {
   padding-top: 6rem;
   width: 100vw;
@@ -61,7 +60,5 @@ svg {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#b3ecff), to(#00ace6));
   background: linear-gradient(#b3ecff, #00ace6);
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
