@@ -17,29 +17,36 @@ body {
   font-family: var(--font-family);
   overflow-x: hidden;
   z-index: 0;
-  
+  color: #00274b;
 }
 
 h1 {
   font-size: 50px;
 }
+
+#goal14Logo {
+  margin: 25px;
+  width: 150px;
+  height: 150px;
+}
+
 body > div {
   margin-left: 100px;
   margin-right: 100px;
 }
 
-svg{
+svg {
   z-index: 2;
 }
-section{
+section {
   z-index: 2;
 }
 .ocean1 {
   background-color: red;
   width: 100vw;
-  height: 6000px; 
+  height: 6000px;
   padding: 0;
-  margin: 0; 
+  margin: 0;
   z-index: 2;
   position: absolute;
 }
@@ -47,21 +54,18 @@ section{
   width: 30%;
   top: -20%;
   margin-top: 40px;
-  
+
   padding-top: 15rem;
-  
+
   text-align: center;
-  
+
   z-index: 1;
-  
+
   margin: 0 auto;
   position: fixed;
   align-items: center;
   left: 35%;
-  
-  
 }
-
 
 .intro > h2 {
   padding-top: 2rem;
