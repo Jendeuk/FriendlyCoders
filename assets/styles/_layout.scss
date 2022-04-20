@@ -9,10 +9,22 @@
 
 body {
     display: flex;
+    flex-wrap: wrap;
 }
 body > div {
     margin-left: 100px;
     margin-right: 100px;
+}
+
+.intro {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.intro > h2 {
+  padding-top: 2rem;
 }
 
 @media (orientation: landscape) {
