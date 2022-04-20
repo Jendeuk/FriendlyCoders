@@ -1,27 +1,17 @@
-
-
 $linn: purple;
-
-
 
 $jenny: crimson;
 
-
-
 $colors: (
-linn--light: lighten($linn, 15%),
-linn--dark: darken($linn, 5%),
-jenny--dark: darken($jenny, 5%),
-jenny--light: lighten($jenny, 15%)
-
-
+  linn--light: lighten($linn, 15%),
+  linn--dark: darken($linn, 5%),
+  jenny--dark: darken($jenny, 5%),
+  jenny--light: lighten($jenny, 15%),
 );
 
 $sky: deepskyblue;
 
-
-
 $sky-background: (
-    sky--light: lighten($sky, 35%),
-    sky--dark: darken($sky, 5%)
+  sky--light: lighten($sky, 35%),
+  sky--dark: darken($sky, 5%),
 );
