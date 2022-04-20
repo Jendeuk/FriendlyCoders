@@ -36,6 +36,7 @@ body > div {
 }
 
 svg {
+  padding-top: 15rem;
   width: 100vw;
   display: block;
 }
