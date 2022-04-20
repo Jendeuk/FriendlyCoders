@@ -112,10 +112,16 @@
 //     }
 // }
 
-svg {
-    padding-top: 6rem;
+.svg {
+    padding-top: 24rem;
     width: 100vw;
     display: block;
+    z-index: 2;
   }
 
+.fish {
+  position: absolute;
+  left: 30%;
+  top: 3000px
+}
  
