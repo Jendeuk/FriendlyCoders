@@ -76,6 +76,118 @@ section {
   padding-top: 2rem;
 }
 
+.soda, .bag, .straw, .bottle, .straw2, .bottle2, .straw3, .straw4, .soda2, .straw5, .straw6, .soda3, .straw7, .bottle3, .bag1, .straw8,
+.straw9 {
+  position: absolute;
+}
+
+.soda, .bag {
+  padding: 5%;
+  z-index: 2;
+}
+
+.straw, .bottle, .bottle2, .soda2, .straw5, .straw6, .soda3, .straw7, .bottle3, .bag1, .straw8, .straw9 {
+  z-index: 2;
+}
+
+.soda {
+  left: 75%;
+  top: -1%;
+}
+
+.bag {
+  left: 70%;
+}
+
+.straw {
+  padding: 1.5%;
+  left: 70%;
+}
+
+.bottle {
+  padding: 3%;
+  left: 65%;
+  top: 2%;
+}
+
+.straw2 {
+  padding: 2%;
+  left: 75%;
+  z-index: 3;
+  top: 3%;
+}
+
+.bottle2 {
+  padding: 4%;
+  left: 80%;
+  top: 4%;
+}
+
+.straw3 {
+  padding: 2%;
+  left: 75%;
+  z-index: 3;
+  top: 5%;
+}
+
+.straw4 {
+  padding: 2%;
+  left: 85%;
+  z-index: 3;
+  top: 2%;
+}
+
+.soda2 {
+  padding: 3%;
+  left: 73%;
+  top: 7%;
+}
+
+.straw5 {
+  padding: 2%;
+  left: 85%;
+  top: 7%;
+}
+
+.straw6 {
+  padding: 2%;
+}
+
+.soda3 {
+  padding: 4%;
+  top: 1%;
+}
+
+.straw7 {
+  padding: 3%;
+  top: 2%;
+  left: -2%;
+}
+
+.bottle3 {
+  padding: 4%;
+  top: 2.6%;
+  left: 3%;
+}
+
+.bag1 {
+  padding: 7%;
+  top: 4.5%;
+  left: -4%;
+}
+
+.straw8 {
+  padding: 3%;
+  top: 7%;
+  left: -2%;
+}
+
+.straw9 {
+  padding: 1.5%;
+  top: 4%;
+  left: 12%;
+}
+
 @media (orientation: landscape) {
   body {
     -webkit-box-orient: horizontal;
@@ -168,6 +280,16 @@ hr {
   }
   20%, 40%, 60%, 80% {
     margin-top: 0px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
@@ -252,6 +374,59 @@ hr {
     left: 35vw;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+.bag, .straw2, .straw4, .soda3, .straw7, .bottle3, .straw, .soda2,
+.straw9 {
+  -webkit-animation: trash 10s infinite alternate;
+          animation: trash 10s infinite alternate;
+}
+
+.soda, .bottle, .straw3, .straw6, .bag1, .straw8, .straw5, .straw2, .bottle2 {
+  -webkit-animation: change 10s infinite alternate;
+          animation: change 10s infinite alternate;
+}
+
+@-webkit-keyframes trash {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes trash {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+
   }
 }
 
