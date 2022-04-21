@@ -120,14 +120,32 @@
     
   }
 
-.fish {
+
+
+
+.object {
+  animation: movedown 5s;
+  animation-timing-function: ease-in-out;
+}
+
+.object--fish {
   position: absolute;
-  left: 30%;
-  top: 3000px;
+  left: 35vw;
+  top: 900px;
   
-  animation: change 10s infinite alternate;
   
-  scale: 0.5;
+  
+  
+
+  
+  
+  
+  
+  transform: rotate(90deg);
+  
+  
+  scale: 0.3;
+  
 
 }
 
@@ -141,6 +159,7 @@
 
 #wave3 {
   animation: ud 3s infinite alternate;
+
 }
 
 @keyframes ud {
@@ -157,11 +176,27 @@
 
  
 @keyframes change {
-  0%, 100% {transform: translateY(0);}
-  10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);}
-  20%, 40%, 60%, 80% {transform: translateY(10px);}
-  
-}
+  0%, 100% {margin-top: 0px;}
+  10%, 30%, 50%, 70%, 90% {margin-top: 10px;}
+  20%, 40%, 60%, 80% {margin-top: 0px;}
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0.7; margin-top: 0px;}
+    
+    100% { margin-top: 10px; opacity: 1;}
+    
+    }
+
+    @keyframes movedown {
+      0% {top: 900; left: 35vw; transform: rotate(80deg);}
+      25% { left: 37vw; transform: rotate(100deg);}
+      
+      75% { left: 32vw; transform: rotate(80deg);}
+      100% {top: 1300px; left: 35vw; transform: rotate(90deg);}
+      
+      
+      }
 
 .bag, .straw2, .straw4, .soda3, .straw7, .bottle3, .straw, .soda2,
 .straw9{
