@@ -163,6 +163,21 @@
   
 }
 
+.bag, .straw2, .straw4, .soda3, .straw7, .bottle3, .straw, .soda2,
+.straw9{
+  animation: trash 10s infinite alternate;
+}
+
+.soda, .bottle, .straw3, .straw6, .bag1, .straw8, .straw5,.straw2, .bottle2{
+  animation: change 10s infinite alternate;
+}
+
+@keyframes trash{
+  0%, 100% {transform: translateY(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateY(10px);}
+  20%, 40%, 60%, 80% {transform: translateY(-10px);}
+}
+
  
   
 
