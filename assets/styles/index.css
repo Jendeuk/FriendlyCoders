@@ -210,19 +210,30 @@ section {
 }
 
 .fishYellow {
-  padding: 1.5%;
-  top: 4%;
-  left: 50%;
-}
-.fishYellow {
+  padding: 1%;
   position: absolute;
   top: 14%;
   left: 45%;
 }
+
 .fishRed {
+  padding: 1%;
   position: absolute;
-  top: 12%;
-  left: 45%;
+  top: 11%;
+  left: 55%;
+}
+
+.fishBlue {
+  padding: 1%;
+  position: absolute;
+  top: 17%;
+  left: 55%;
+}
+.fishPink {
+  padding: 1%;
+  position: absolute;
+  top: 17%;
+  left: 55%;
 }
 
 @media (orientation: landscape) {
