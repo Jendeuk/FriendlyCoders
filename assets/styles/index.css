@@ -280,16 +280,6 @@ hr {
   }
   20%, 40%, 60%, 80% {
     margin-top: 0px;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
   }
 }
 
@@ -374,17 +364,6 @@ hr {
     left: 35vw;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
   }
 }
 
@@ -426,7 +405,6 @@ hr {
   20%, 40%, 60%, 80% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
-
   }
 }
 
