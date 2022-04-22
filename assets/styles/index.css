@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
@@ -17,7 +17,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   font-family: var(--font-family);
   overflow-x: hidden;
   z-index: 0;
@@ -104,8 +104,8 @@ section {
   margin: 0 auto;
   position: fixed;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   left: 35%;
 }
 
@@ -256,40 +256,35 @@ section {
   padding: 1%;
   position: absolute;
   top: 14%;
-  left: 45%;
+  left: 52%;
 }
 
 .fishRed {
   padding: 1%;
   position: absolute;
   top: 11%;
-  left: 55%;
+  left: 65%;
 }
 
 .fishBlue {
   padding: 1%;
   position: absolute;
   top: 17%;
-  left: 55%;
+  left: 65%;
 }
 .fishPink {
   padding: 1%;
   position: absolute;
-  top: 17%;
-  left: 55%;
-
-  padding: 1.5%;
-  top: 4%;
-  left: 50%;
-
+  top: 14%;
+  left: 75%;
 }
 
 @media (orientation: landscape) {
   body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -302,8 +297,8 @@ hr {
   body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -316,9 +311,9 @@ hr {
 
 .object {
   -webkit-animation: movedown 5s;
-          animation: movedown 5s;
+  animation: movedown 5s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 .object--fish {
@@ -326,67 +321,83 @@ hr {
   left: 35vw;
   top: 900px;
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   scale: 0.3;
 }
 
 #wave1 {
   -webkit-animation: ud 7s infinite alternate;
-          animation: ud 7s infinite alternate;
+  animation: ud 7s infinite alternate;
 }
 
 #wave2 {
   -webkit-animation: ud 5s infinite alternate;
-          animation: ud 5s infinite alternate;
+  animation: ud 5s infinite alternate;
 }
 
 #wave3 {
   -webkit-animation: ud 3s infinite alternate;
-          animation: ud 3s infinite alternate;
+  animation: ud 3s infinite alternate;
 }
 
 @-webkit-keyframes ud {
   from {
     -webkit-transform: translateX(-35%);
-            transform: translateX(-35%);
+    transform: translateX(-35%);
   }
   to {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
 @keyframes ud {
   from {
     -webkit-transform: translateX(-35%);
-            transform: translateX(-35%);
+    transform: translateX(-35%);
   }
   to {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes change {
-  0%, 100% {
+  0%,
+  100% {
     margin-top: 0px;
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     margin-top: 10px;
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     margin-top: 0px;
   }
 }
 
 @keyframes change {
-  0%, 100% {
+  0%,
+  100% {
     margin-top: 0px;
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     margin-top: 10px;
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     margin-top: 0px;
   }
 }
@@ -418,23 +429,23 @@ hr {
     top: 900;
     left: 35vw;
     -webkit-transform: rotate(80deg);
-            transform: rotate(80deg);
+    transform: rotate(80deg);
   }
   25% {
     left: 37vw;
     -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
+    transform: rotate(100deg);
   }
   75% {
     left: 32vw;
     -webkit-transform: rotate(80deg);
-            transform: rotate(80deg);
+    transform: rotate(80deg);
   }
   100% {
     top: 1300px;
     left: 35vw;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -443,64 +454,95 @@ hr {
     top: 900;
     left: 35vw;
     -webkit-transform: rotate(80deg);
-            transform: rotate(80deg);
+    transform: rotate(80deg);
   }
   25% {
     left: 37vw;
     -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
+    transform: rotate(100deg);
   }
   75% {
     left: 32vw;
     -webkit-transform: rotate(80deg);
-            transform: rotate(80deg);
+    transform: rotate(80deg);
   }
   100% {
     top: 1300px;
     left: 35vw;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
-.bag, .straw2, .straw4, .soda3, .straw7, .bottle3, .straw, .soda2,
+.bag,
+.straw2,
+.straw4,
+.soda3,
+.straw7,
+.bottle3,
+.straw,
+.soda2,
 .straw9 {
   -webkit-animation: trash 10s infinite alternate;
-          animation: trash 10s infinite alternate;
+  animation: trash 10s infinite alternate;
 }
 
-.soda, .bottle, .straw3, .straw6, .bag1, .straw8, .straw5, .straw2, .bottle2 {
+.soda,
+.bottle,
+.straw3,
+.straw6,
+.bag1,
+.straw8,
+.straw5,
+.straw2,
+.bottle2 {
   -webkit-animation: change 10s infinite alternate;
-          animation: change 10s infinite alternate;
+  animation: change 10s infinite alternate;
 }
 
 @-webkit-keyframes trash {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
 @keyframes trash {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -511,7 +553,13 @@ hr {
 }
 
 .ocean1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4ca9fe), to(#00274b));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#4ca9fe),
+    to(#00274b)
+  );
   background: linear-gradient(#4ca9fe, #00274b);
 }
 
