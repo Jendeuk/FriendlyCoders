@@ -24,10 +24,6 @@ body {
   color: #00274b;
 }
 
-h1 {
-  font-size: 50px;
-}
-
 #goal14Logo {
   margin: 25px;
   width: 150px;
@@ -979,5 +975,9 @@ hr {
 
 body {
   background-color: #d6ebf6;
+}
+
+h1 {
+  font-size: 50px;
 }
 /*# sourceMappingURL=index.css.map */
