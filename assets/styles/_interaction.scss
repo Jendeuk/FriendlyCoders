@@ -262,6 +262,20 @@
   animation: fade 5s ;
 }
 
+@keyframes moveright {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  90% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 @keyframes fade {
   0% {opacity: 0;}
@@ -273,3 +287,20 @@
   }
  
 }
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  90% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+

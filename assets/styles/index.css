@@ -301,17 +301,28 @@ section {
 .fishGreen {
   padding: 1.5%;
   top: 31%;
+  left: -35%;
 }
 
 .fishHotpink {
   padding: 1.5%;
   top: 37%;
+  left: -25%;
 }
 
 .fishLightblue {
   padding: 1.5%;
   top: 34%;
-  left: 10%;
+  left: -30%;
+}
+
+.fishnet {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  top: 1900px;
+  z-index: 3;
+  left: -30px;
 }
 
 @media (orientation: landscape) {
@@ -328,6 +339,7 @@ section {
   -webkit-animation: moveleft 6s;
           animation: moveleft 6s;
 }
+
 
 @-webkit-keyframes moveleft {
   0% {
@@ -357,6 +369,11 @@ section {
   100% {
     transform: translateX(0%);
   }
+
+.moveright {
+  -webkit-animation: moveright 6s;
+          animation: moveright 6s;
+
 }
 hr {
   margin-bottom: 600px;
@@ -776,6 +793,44 @@ hr {
           animation: fade 5s;
 }
 
+@-webkit-keyframes moveright {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  25% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  90% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveright {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  25% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  90% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -793,6 +848,46 @@ hr {
     opacity: 1;
   }
 }
+
+@-webkit-keyframes moveleft {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  90% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes moveleft {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  90% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+
 .box {
   width: 100px;
   height: 100px;
