@@ -449,7 +449,7 @@ hr {
   top: 900px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  scale: 0.3;
+  padding: 5%;
 }
 
 .movedown {
