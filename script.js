@@ -76,6 +76,10 @@ let sustain = new ScrollMagic.Scene({triggerElement: ".sustain"})
 .setClassToggle(".sustain", "moveleft")
 .addTo(controller);
 
+let sustain2 = new ScrollMagic.Scene({triggerElement: ".sustain2"})
+.setClassToggle(".sustain2", "moveright")
+.addTo(controller);
+
 let netright = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
 
 .setClassToggle(".fishNet", "moveright2")
