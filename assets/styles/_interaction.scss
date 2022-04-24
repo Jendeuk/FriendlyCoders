@@ -123,10 +123,6 @@
 
 
 
-.object {
-  animation: movedown 5s;
-  animation-timing-function: ease-in-out;
-}
 
 .object--fish {
   position: absolute;
@@ -148,6 +144,13 @@
   
 
 }
+
+.movedown {
+  animation: movedown 40s;
+  animation-timing-function: linear;
+}
+
+
 
 #wave1 {
   animation: ud 7s infinite alternate;
@@ -171,7 +174,11 @@
   }
 }
 
+.turn {
 
+  transform: rotateZ(40deg);
+  
+}
  
 
  
@@ -189,14 +196,30 @@
     }
 
     @keyframes movedown {
-      0% {top: 900; left: 35vw; transform: rotate(80deg);}
-      25% { left: 37vw; transform: rotate(100deg);}
+      0% {top: 900; left: 35vw; transform: rotate(80deg); background-color: blue; }
+      5% { left: 37vw; transform: rotate(100deg); background-color: yellow;}
       
-      75% { left: 32vw; transform: rotate(80deg);}
-      100% {top: 1300px; left: 35vw; transform: rotate(90deg);}
+      10% { left: 32vw; transform: rotate(80deg); background-color: green}
+      15% { left: 37vw; transform: rotate(100deg); background-color: red}
+      20% { left: 32vw; transform: rotate(95deg); background-color: blue}
+      25% { left: 28vw; transform: rotate(90deg); background-color: yellow;}
+      30% { left: 24vw; transform: rotate(0deg); background-color: green}
+      35% { left: 20vw; transform: rotate(0deg); background-color: red}
+      40% { left: 32vw; transform: rotate(80deg); background-color: blue}
+      45% { left: 37vw; transform: rotate(100deg); background-color: yellow;}
+      50% { left: 35vw; transform: rotate(80deg); background-color: green}
+      60% { left: 32vw; transform: rotate(100deg); background-color: red}
+      70% { left: 37vw; transform: rotate(110deg); background-color: blue}
+      80% { left: 32vw; transform: rotate(80deg); background-color: yellow;}
+      90% { left: 37vw; transform: rotate(100deg); opacity: 1; background-color: green}
+      100% {top: 7000px; left: 37vw; transform: rotate(90deg);
+      opacity: 0; background-color: red}
+     
       
       
       }
+
+     
 
 .bag, .straw2, .straw4, .soda3, .straw7, .bottle3, .straw, .soda2,
 .straw9{
@@ -231,9 +254,14 @@
  
 }
 
-.skull, .danger {
+.danger {
   animation: fade 0.8s infinite alternate;
 }
+
+.fadein {
+  animation: fade 5s ;
+}
+
 
 @keyframes fade {
   0% {opacity: 0;}
