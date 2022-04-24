@@ -304,7 +304,7 @@ section {
 .fishGreen {
   padding: 1.5%;
   top: 31%;
-  left: -35%
+  left: -35%;
 }
 
 .fishHotpink {
@@ -318,13 +318,14 @@ section {
   left: -30%;
 }
 
-.fishnet {
+// Fish net
+.fishNet {
   position: absolute;
   width: 550px;
   height: 550px;
   top: 1900px;
   z-index: 3;
-  left: -30px;
+  left: 25px;
 }
 
 @media (orientation: landscape) {
@@ -343,10 +344,8 @@ section {
 }
 
 .moveright {
-  animation: moveright 6s ;
-  
-  }
-
+  animation: moveright 6s;
+}
 
 hr {
   margin-bottom: 600px;
