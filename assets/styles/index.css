@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
 }
 
@@ -12,8 +13,11 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: var(--font-family);
   overflow-x: hidden;
   z-index: 0;
@@ -99,7 +103,9 @@ section {
   z-index: 1;
   margin: 0 auto;
   position: fixed;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   left: 35%;
 }
 
@@ -247,38 +253,21 @@ section {
 }
 
 .fishYellow {
+  padding: 1.5%;
+  top: 4%;
+  left: 50%;
   position: absolute;
-  padding: 1.2%;
-  top: 14%;
-  left: 56%;
-}
-
-.fishRed {
-  position: absolute;
-  padding: 1.2%;
-  top: 11%;
-  left: 70%;
-}
-
-.fishBlue {
-  position: absolute;
-  padding: 1.2%;
-  top: 17%;
-  left: 70%;
-}
-
-.fishPink {
-  position: absolute;
-  padding: 1.2%;
-  top: 14%;
-  left: 77%;
 }
 
 @media (orientation: landscape) {
   body {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
+
 hr {
   margin-bottom: 600px;
   background-color: white;
@@ -286,9 +275,72 @@ hr {
 
 @media (orientation: portrait) {
   body {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+
+.danger {
+  position: absolute;
+  top: 5700px;
+  left: 440px;
+  width: 200px;
+  height: 200px;
+}
+
+.skull {
+  position: absolute;
+  top: 5700px;
+  left: 700px;
+  width: 200px;
+  height: 200px;
+}
+
+.bubbles {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.bubbles--1 {
+  left: 600px;
+  top: 5650px;
+}
+
+.bubbles--2 {
+  left: 100px;
+  top: 5400px;
+}
+
+.bubbles--3 {
+  left: 250px;
+  top: 5150px;
+}
+
+.bubbles--4 {
+  left: 700px;
+  top: 5050px;
+}
+
+.bubbles--5 {
+  left: 800px;
+  top: 5350px;
+}
+
+.bubbles--6 {
+  left: 600px;
+  top: 4900px;
+}
+
+.bubbles--7 {
+  left: 800px;
+  top: 4800px;
+}
+
 .svg {
   padding-top: 24rem;
   width: 180vw;
@@ -298,89 +350,81 @@ hr {
 
 .object {
   -webkit-animation: movedown 5s;
-  animation: movedown 5s;
+          animation: movedown 5s;
   -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .object--fish {
   position: absolute;
   left: 35vw;
   top: 900px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   scale: 0.3;
 }
 
 #wave1 {
   -webkit-animation: ud 7s infinite alternate;
-  animation: ud 7s infinite alternate;
+          animation: ud 7s infinite alternate;
 }
 
 #wave2 {
   -webkit-animation: ud 5s infinite alternate;
-  animation: ud 5s infinite alternate;
+          animation: ud 5s infinite alternate;
 }
 
 #wave3 {
   -webkit-animation: ud 3s infinite alternate;
-  animation: ud 3s infinite alternate;
+          animation: ud 3s infinite alternate;
 }
 
 @-webkit-keyframes ud {
   from {
-    transform: translateX(-35%);
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
   }
   to {
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes ud {
   from {
-    transform: translateX(-35%);
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
   }
   to {
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
+
 @-webkit-keyframes change {
-  0%,
-  100% {
+  0%, 100% {
     margin-top: 0px;
   }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+  10%, 30%, 50%, 70%, 90% {
     margin-top: 10px;
   }
-  20%,
-  40%,
-  60%,
-  80% {
+  20%, 40%, 60%, 80% {
     margin-top: 0px;
   }
 }
+
 @keyframes change {
-  0%,
-  100% {
+  0%, 100% {
     margin-top: 0px;
   }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+  10%, 30%, 50%, 70%, 90% {
     margin-top: 10px;
   }
-  20%,
-  40%,
-  60%,
-  80% {
+  20%, 40%, 60%, 80% {
     margin-top: 0px;
   }
 }
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0.7;
@@ -391,6 +435,7 @@ hr {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0.7;
@@ -401,111 +446,156 @@ hr {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes movedown {
   0% {
     top: 900;
     left: 35vw;
-    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
   }
   25% {
     left: 37vw;
-    transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
   }
   75% {
     left: 32vw;
-    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
   }
   100% {
     top: 1300px;
     left: 35vw;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
+
 @keyframes movedown {
   0% {
     top: 900;
     left: 35vw;
-    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
   }
   25% {
     left: 37vw;
-    transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
   }
   75% {
     left: 32vw;
-    transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
   }
   100% {
     top: 1300px;
     left: 35vw;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
-.bag,
-.straw2,
-.straw4,
-.soda3,
-.straw7,
-.bottle3,
-.straw,
-.soda2,
+
+.bag, .straw2, .straw4, .soda3, .straw7, .bottle3, .straw, .soda2,
 .straw9 {
   -webkit-animation: trash 10s infinite alternate;
-  animation: trash 10s infinite alternate;
+          animation: trash 10s infinite alternate;
 }
 
-.soda,
-.bottle,
-.straw3,
-.straw6,
-.bag1,
-.straw8,
-.straw5,
-.straw2,
-.bottle2 {
+.soda, .bottle, .straw3, .straw6, .bag1, .straw8, .straw5, .straw2, .bottle2 {
   -webkit-animation: change 10s infinite alternate;
-  animation: change 10s infinite alternate;
+          animation: change 10s infinite alternate;
 }
 
 @-webkit-keyframes trash {
-  0%,
-  100% {
-    transform: translateY(0);
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateY(10px);
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateY(-10px);
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 
 @keyframes trash {
-  0%,
-  100% {
-    transform: translateY(0);
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateY(10px);
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateY(-10px);
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
+
+.bubbles {
+  -webkit-animation: bubbleup 5s infinite;
+          animation: bubbleup 5s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes bubbleup {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+
+@keyframes bubbleup {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+
+.skull, .danger {
+  -webkit-animation: fade 0.8s infinite alternate;
+          animation: fade 0.8s infinite alternate;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .box {
   width: 100px;
   height: 100px;
@@ -513,9 +603,11 @@ hr {
 }
 
 .ocean1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4ca9fe), to(#00274b));
   background: linear-gradient(#4ca9fe, #00274b);
 }
 
 body {
   background-color: #d6ebf6;
-} /*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
