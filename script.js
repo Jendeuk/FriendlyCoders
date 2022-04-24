@@ -68,7 +68,7 @@ let die3 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
 
 let o2 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
 
-.setClassToggle(".o2", "moveleft2")
+.setClassToggle(".o2", "moveleft")
 .addTo(controller);
 
  

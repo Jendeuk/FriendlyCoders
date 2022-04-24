@@ -76,7 +76,7 @@ section {
 .ocean1 {
   background-color: red;
   width: 100vw;
-  height: 6000px;
+  height: 6200px;
   padding: 0;
   margin: 0;
   z-index: 2;
@@ -343,27 +343,44 @@ section {
   left: 100%;
 }
 
-.moveleft {
-  animation: moveleft 6s;
+
+
+
+
+
+.svg {
+  padding-top: 24rem;
+  width: 180vw;
+  display: block;
+  z-index: 2;
+  
 }
 
-.moveleft2 {
-  animation: moveleft 6s;
-  animation-delay: 0.5s;
-}
+.object--fish {
+  position: absolute;
+  left: 35vw;
+  top: 0px;
+  
+  
+  
+  
 
+  
+  
+  
+  
+  transform: rotate(90deg);
+  
+  
+  padding: 5%;
+  
 
-.moveright {
-  animation: moveright 6s;
-}
-
-.moveright2 {
-  animation: moveright2 6s;
 }
 
 hr {
   margin-bottom: 600px;
   background-color: white;
+  display: inline;
 }
 
 @media (orientation: portrait) {

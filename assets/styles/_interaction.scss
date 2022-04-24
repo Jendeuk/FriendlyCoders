@@ -112,41 +112,15 @@
 //     }
 // }
 
-.svg {
-    padding-top: 24rem;
-    width: 180vw;
-    display: block;
-    z-index: 2;
-    
-  }
 
 
 
 
 
-.object--fish {
-  position: absolute;
-  left: 35vw;
-  top: 900px;
-  
-  
-  
-  
 
-  
-  
-  
-  
-  transform: rotate(90deg);
-  
-  
-  padding: 5%;
-  
-
-}
 
 .movedown {
-  animation: movedown 50s;
+  animation: movedown 60s;
   animation-timing-function: linear;
 }
 
@@ -320,4 +294,20 @@
   }
 }
 
+.moveleft {
+  animation: moveleft 6s;
+}
 
+.moveleft2 {
+  animation: moveleft2 6s;
+  animation-delay: 0.5s;
+}
+
+
+.moveright {
+  animation: moveright 6s;
+}
+
+.moveright2 {
+  animation: moveright2 6s;
+}
