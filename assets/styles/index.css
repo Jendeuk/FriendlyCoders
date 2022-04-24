@@ -259,6 +259,9 @@ section {
   padding: 1.5%;
   top: 4%;
   left: 50%;
+
+  position: absolute;
+
 }
 
 .fishBlue {
@@ -287,6 +290,7 @@ section {
   padding: 1.5%;
   top: 37%;
   left: 10%;
+
 }
 
 @media (orientation: landscape) {
@@ -311,6 +315,67 @@ hr {
             flex-direction: column;
   }
 }
+
+
+.danger {
+  position: absolute;
+  top: 5700px;
+  left: 440px;
+  width: 200px;
+  height: 200px;
+}
+
+.skull {
+  position: absolute;
+  top: 5700px;
+  left: 700px;
+  width: 200px;
+  height: 200px;
+}
+
+.bubbles {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.bubbles--1 {
+  left: 600px;
+  top: 5650px;
+}
+
+.bubbles--2 {
+  left: 100px;
+  top: 5400px;
+}
+
+.bubbles--3 {
+  left: 250px;
+  top: 5150px;
+}
+
+.bubbles--4 {
+  left: 700px;
+  top: 5050px;
+}
+
+.bubbles--5 {
+  left: 800px;
+  top: 5350px;
+}
+
+.bubbles--6 {
+  left: 600px;
+  top: 4900px;
+}
+
+.bubbles--7 {
+  left: 800px;
+  top: 4800px;
+}
+
 
 .svg {
   padding-top: 24rem;
@@ -498,6 +563,7 @@ hr {
   0%, 100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateY(10px);
@@ -506,6 +572,74 @@ hr {
   20%, 40%, 60%, 80% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
+  }
+}
+
+.bubbles {
+  -webkit-animation: bubbleup 5s infinite;
+          animation: bubbleup 5s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes bubbleup {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+
+@keyframes bubbleup {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+
+.skull, .danger {
+  -webkit-animation: fade 0.8s infinite alternate;
+          animation: fade 0.8s infinite alternate;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+
   }
 }
 

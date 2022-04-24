@@ -107,6 +107,8 @@ section {
   padding-top: 2rem;
 }
 
+
+
 .soda,
 .bag,
 .straw,
@@ -135,6 +137,7 @@ section {
   padding: 5%;
   z-index: 2;
 }
+
 
 .straw,
 .bottle,
@@ -253,6 +256,7 @@ section {
   padding: 1.5%;
   top: 4%;
   left: 50%;
+  position: absolute;
 }
 .fishBlue{
   padding: 1.5%;
@@ -294,4 +298,66 @@ hr {
   body {
     flex-direction: column;
   }
+}
+
+.danger {
+  position: absolute;
+  top: 5700px;
+  left: 440px;
+  width: 200px;
+  height: 200px;
+  
+  
+}
+
+.skull {
+  position: absolute;
+  top: 5700px;
+  left: 700px;
+  width: 200px;
+  height: 200px;
+}
+
+.bubbles {
+  position: absolute;
+  
+  height: 100px;
+  
+  width: 100px;
+  filter: invert(100%);
+}
+
+.bubbles--1 {
+  left: 600px;
+  top: 5650px;
+}
+
+.bubbles--2 {
+  left: 100px;
+  top: 5400px;
+}
+
+.bubbles--3 {
+  left: 250px;
+  top: 5150px;
+}
+
+.bubbles--4 {
+  left: 700px;
+  top: 5050px;
+}
+
+.bubbles--5 {
+  left: 800px;
+  top: 5350px;
+}
+
+.bubbles--6 {
+  left: 600px;
+  top: 4900px;
+}
+
+.bubbles--7 {
+  left: 800px;
+  top: 4800px;
 }
