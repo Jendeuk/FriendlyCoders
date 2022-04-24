@@ -133,7 +133,8 @@ section {
 .fishGreen,
 .fishHotpink,
 .fishLightblue,
-.sustain {
+.sustain,
+.sustain2 {
   position: absolute;
 }
 
@@ -450,6 +451,12 @@ hr {
   width: 30%;
   top: 43%;
   left: 70%;
+}
+
+.sustain2 {
+  text-align: center;
+  width: 30%;
+  top: 63%;
 }
 
 .svg {
