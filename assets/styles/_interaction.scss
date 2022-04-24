@@ -196,24 +196,24 @@
     }
 
     @keyframes movedown {
-      0% {top: 900; left: 35vw; transform: rotate(80deg); background-color: blue; }
-      5% { left: 37vw; transform: rotate(100deg); background-color: yellow;}
+      0% {top: 900; left: 35vw; transform: rotate(80deg);  }
+      5% { left: 37vw; transform: rotate(100deg); }
       
-      10% { left: 32vw; transform: rotate(80deg); background-color: green}
-      15% { left: 37vw; transform: rotate(100deg); background-color: red}
-      20% { left: 32vw; transform: rotate(95deg); background-color: blue}
-      25% { left: 28vw; transform: rotate(90deg); background-color: yellow;}
-      30% { left: 24vw; transform: rotate(0deg); background-color: green}
-      35% { left: 20vw; transform: rotate(0deg); background-color: red}
-      40% { left: 32vw; transform: rotate(80deg); background-color: blue}
-      45% { left: 37vw; transform: rotate(100deg); background-color: yellow;}
-      50% { left: 35vw; transform: rotate(80deg); background-color: green}
-      60% { left: 32vw; transform: rotate(100deg); background-color: red}
-      70% { left: 37vw; transform: rotate(110deg); background-color: blue}
-      80% { left: 32vw; transform: rotate(80deg); background-color: yellow;}
-      90% { left: 37vw; transform: rotate(100deg); opacity: 1; background-color: green}
+      10% { left: 32vw; transform: rotate(80deg); }
+      15% { left: 20vw; transform: rotate(80deg); }
+      20% { left: 32vw; transform: rotate(95deg); }
+      25% { left: 20vw; transform: rotate(90deg); }
+      30% { left: 24vw; transform: rotate(0deg); }
+      35% { left: 43vw; transform: rotate(90deg); }
+      40% { left: 32vw; transform: rotate(80deg); }
+      45% { left: 37vw; transform: rotate(100deg); }
+      50% { left: 35vw; transform: rotate(80deg); }
+      60% { left: 32vw; transform: rotate(100deg); }
+      70% { left: 37vw; transform: rotate(110deg); }
+      80% { left: 32vw; transform: rotate(80deg); }
+      90% { left: 37vw; transform: rotate(100deg); opacity: 1; }
       100% {top: 6500px; left: 37vw; transform: rotate(90deg);
-      opacity: 0; background-color: red}
+      opacity: 0; }
      
       
       
@@ -264,16 +264,33 @@
 
 @keyframes moveright {
   0% {
-    transform: translateX(0px);
+    transform: translateX(-50%);
+  }
+  25% {
+    transform: translateX(160%);
+  }
+  90% {
+    transform: translateX(160%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveright2 {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
   }
   25% {
     transform: translateX(100%);
+    opacity: 0;
   }
   90% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-20%);
   }
 }
 

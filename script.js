@@ -41,12 +41,12 @@ let scene5 = new ScrollMagic.Scene({triggerElement: ".fishRed"})
 .setClassToggle(".fishRed", "moveleft")
 .addTo(controller);
 
-let scene8 = new ScrollMagic.Scene({triggerElement: ".fishHotpink"})
+let scene8 = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
 
 .setClassToggle(".fishHotpink", "moveright")
 .addTo(controller);
 
-let scene9 = new ScrollMagic.Scene({triggerElement: ".fishLightblue"})
+let scene9 = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
 
 .setClassToggle(".fishLightblue", "moveright")
 .addTo(controller);
@@ -71,6 +71,26 @@ let o2 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
 .setClassToggle(".o2", "moveleft2")
 .addTo(controller);
 
+ 
 let sustain = new ScrollMagic.Scene({triggerElement: ".sustain"})
 .setClassToggle(".sustain", "moveleft")
 .addTo(controller);
+
+let netright = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
+
+.setClassToggle(".fishNet", "moveright2")
+.addTo(controller);
+
+let fishmove = new ScrollMagic.Scene({triggerElement: ".fishHotpink"})
+
+.setClassToggle(".fishNet", "moveleft2")
+.addTo(controller);
+
+
+let fishmove2 = new ScrollMagic.Scene({triggerElement: ".fishHotpink"})
+
+.setClassToggle(".fishLighblue", "moveleft2")
+.addTo(controller);
+
+
+
