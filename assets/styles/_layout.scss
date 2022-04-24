@@ -126,7 +126,8 @@ section {
 .straw9,
 .fishGreen,
 .fishHotpink,
-.fishLightblue {
+.fishLightblue,
+.sustain {
   position: absolute;
 }
 
@@ -427,4 +428,11 @@ hr {
 .bubbles--7 {
   left: 800px;
   top: 4800px;
+}
+
+.sustain{
+  text-align: center;
+  width: 30%;
+  top: 43%;
+  left: 70%;
 }

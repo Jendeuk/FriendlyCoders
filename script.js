@@ -70,3 +70,7 @@ let o2 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
 
 .setClassToggle(".o2", "moveleft2")
 .addTo(controller);
+
+let sustain = new ScrollMagic.Scene({triggerElement: ".sustain"})
+.setClassToggle(".sustain", "moveleft")
+.addTo(controller);
