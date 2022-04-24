@@ -38,7 +38,7 @@ h1 {
 
 .flower {
   position: absolute;
-  
+
   z-index: 2;
   padding: 5%;
 }
@@ -107,8 +107,6 @@ section {
   padding-top: 2rem;
 }
 
-
-
 .soda,
 .bag,
 .straw,
@@ -137,7 +135,6 @@ section {
   padding: 5%;
   z-index: 2;
 }
-
 
 .straw,
 .bottle,
@@ -254,32 +251,42 @@ section {
 
 .fishYellow {
   padding: 1.5%;
-  top: 4%;
-  left: 50%;
+  top: 14%;
+  left: 56%;
   position: absolute;
 }
-.fishBlue{
+
+.fishBlue {
   padding: 1.5%;
+  top: 17%;
+  left: 70%;
+  position: absolute;
 }
-.fishPink{
+.fishPink {
   padding: 1.5%;
+  top: 14%;
+  left: 75%;
+  position: absolute;
 }
-.fishRed{
+.fishRed {
   padding: 1.5%;
+  top: 11%;
+  left: 70%;
+  position: absolute;
 }
 
-.fishGreen{
+.fishGreen {
   padding: 1.5%;
-  top: 35%;
+  top: 31%;
 }
 
-.fishHotpink{
-  padding: 1.5%;
-  top: 39%;
-}
-.fishLightblue{
+.fishHotpink {
   padding: 1.5%;
   top: 37%;
+}
+.fishLightblue {
+  padding: 1.5%;
+  top: 34%;
   left: 10%;
 }
 
@@ -306,8 +313,6 @@ hr {
   left: 440px;
   width: 200px;
   height: 200px;
-  
-  
 }
 
 .skull {
@@ -320,9 +325,9 @@ hr {
 
 .bubbles {
   position: absolute;
-  
+
   height: 100px;
-  
+
   width: 100px;
   filter: invert(100%);
 }
