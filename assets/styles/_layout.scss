@@ -274,21 +274,21 @@ section {
 .dieFishYellow {
   padding: 1.5%;
   top: 21%;
-  left: 69%;
+  left: 95%;
   position: absolute;
 }
 
 .dieFishPurple {
   padding: 1.5%;
   top: 24%;
-  left: 64%;
+  left: 90%;
   position: absolute;
 }
 
 .dieFishDarkBlue {
   padding: 1.5%;
   top: 27%;
-  left: 69%;
+  left: 100%;
   position: absolute;
 }
 
@@ -296,7 +296,7 @@ section {
 .o2 {
   padding: 1.5%;
   top: 20%;
-  left: 58%;
+  left: 100%;
   position: absolute;
 }
 
@@ -304,7 +304,11 @@ section {
 .fishGreen {
   padding: 1.5%;
   top: 31%;
+
   left: -35%;
+
+  left: -20%
+
 }
 
 .fishHotpink {
@@ -342,6 +346,12 @@ section {
 .moveleft {
   animation: moveleft 6s;
 }
+
+.moveleft2 {
+  animation: moveleft 6s;
+  animation-delay: 0.5s;
+}
+
 
 .moveright {
   animation: moveright 6s;
