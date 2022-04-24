@@ -129,7 +129,10 @@ section {
 .bottle3,
 .bag1,
 .straw8,
-.straw9 {
+.straw9,
+.fishGreen,
+.fishHotpink,
+.fishLightblue {
   position: absolute;
 }
 
@@ -256,7 +259,38 @@ section {
   padding: 1.5%;
   top: 4%;
   left: 50%;
+
   position: absolute;
+
+}
+
+.fishBlue {
+  padding: 1.5%;
+}
+
+.fishPink {
+  padding: 1.5%;
+}
+
+.fishRed {
+  padding: 1.5%;
+}
+
+.fishGreen {
+  padding: 1.5%;
+  top: 35%;
+}
+
+.fishHotpink {
+  padding: 1.5%;
+  top: 39%;
+}
+
+.fishLightblue {
+  padding: 1.5%;
+  top: 37%;
+  left: 10%;
+
 }
 
 @media (orientation: landscape) {
@@ -281,6 +315,7 @@ hr {
             flex-direction: column;
   }
 }
+
 
 .danger {
   position: absolute;
@@ -340,6 +375,7 @@ hr {
   left: 800px;
   top: 4800px;
 }
+
 
 .svg {
   padding-top: 24rem;
@@ -527,6 +563,7 @@ hr {
   0%, 100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+
   }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateY(10px);
@@ -593,6 +630,16 @@ hr {
   }
   100% {
     opacity: 1;
+
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+
   }
 }
 

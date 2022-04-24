@@ -125,7 +125,10 @@ section {
 .bottle3,
 .bag1,
 .straw8,
-.straw9 {
+.straw9,
+.fishGreen,
+.fishHotpink,
+.fishLightblue {
   position: absolute;
 }
 
@@ -254,6 +257,30 @@ section {
   top: 4%;
   left: 50%;
   position: absolute;
+}
+.fishBlue{
+  padding: 1.5%;
+}
+.fishPink{
+  padding: 1.5%;
+}
+.fishRed{
+  padding: 1.5%;
+}
+
+.fishGreen{
+  padding: 1.5%;
+  top: 35%;
+}
+
+.fishHotpink{
+  padding: 1.5%;
+  top: 39%;
+}
+.fishLightblue{
+  padding: 1.5%;
+  top: 37%;
+  left: 10%;
 }
 
 @media (orientation: landscape) {
