@@ -146,7 +146,7 @@
 }
 
 .movedown {
-  animation: movedown 40s;
+  animation: movedown 50s;
   animation-timing-function: linear;
 }
 
@@ -212,7 +212,7 @@
       70% { left: 37vw; transform: rotate(110deg); background-color: blue}
       80% { left: 32vw; transform: rotate(80deg); background-color: yellow;}
       90% { left: 37vw; transform: rotate(100deg); opacity: 1; background-color: green}
-      100% {top: 7000px; left: 37vw; transform: rotate(90deg);
+      100% {top: 6500px; left: 37vw; transform: rotate(90deg);
       opacity: 0; background-color: red}
      
       
