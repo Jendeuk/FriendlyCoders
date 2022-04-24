@@ -278,16 +278,27 @@ section {
 .fishGreen {
   padding: 1.5%;
   top: 31%;
+  left: -35%
 }
 
 .fishHotpink {
   padding: 1.5%;
   top: 37%;
+  left: -25%;
 }
 .fishLightblue {
   padding: 1.5%;
   top: 34%;
-  left: 10%;
+  left: -30%;
+}
+
+.fishnet {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  top: 1900px;
+  z-index: 3;
+  left: -30px;
 }
 
 @media (orientation: landscape) {
@@ -306,20 +317,11 @@ animation: moveleft 6s ;
 
 }
 
-@keyframes moveleft {
-  0% {
-    transform: translateX(0%);
+.moveright {
+  animation: moveright 6s ;
+  
   }
-  25% {
-    transform: translateX(-100%);
-  }
-  90% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
+
 
 hr {
   margin-bottom: 600px;
