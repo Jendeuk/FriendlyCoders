@@ -249,12 +249,7 @@ section {
   left: 12%;
 }
 
-.fishYellow {
-  padding: 1.5%;
-  top: 14%;
-  left: 56%;
-  position: absolute;
-}
+// Alive fishes
 
 .fishBlue {
   padding: 1.5%;
@@ -275,6 +270,37 @@ section {
   position: absolute;
 }
 
+// Die fishes
+.dieFishYellow {
+  padding: 1.5%;
+  top: 21%;
+  left: 69%;
+  position: absolute;
+}
+
+.dieFishPurple {
+  padding: 1.5%;
+  top: 24%;
+  left: 64%;
+  position: absolute;
+}
+
+.dieFishDarkBlue {
+  padding: 1.5%;
+  top: 27%;
+  left: 69%;
+  position: absolute;
+}
+
+// O2
+.o2 {
+  padding: 1.5%;
+  top: 20%;
+  left: 58%;
+  position: absolute;
+}
+
+// New fish comes in
 .fishGreen {
   padding: 1.5%;
   top: 31%;
@@ -313,8 +339,7 @@ section {
 }
 
 .moveleft {
-animation: moveleft 6s ;
-
+  animation: moveleft 6s;
 }
 
 .moveright {
