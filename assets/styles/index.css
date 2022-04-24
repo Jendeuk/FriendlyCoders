@@ -279,35 +279,35 @@ section {
 .dieFishYellow {
   padding: 1.5%;
   top: 21%;
-  left: 69%;
+  left: 95%;
   position: absolute;
 }
 
 .dieFishPurple {
   padding: 1.5%;
   top: 24%;
-  left: 64%;
+  left: 90%;
   position: absolute;
 }
 
 .dieFishDarkBlue {
   padding: 1.5%;
   top: 27%;
-  left: 69%;
+  left: 100%;
   position: absolute;
 }
 
 .o2 {
   padding: 1.5%;
   top: 20%;
-  left: 58%;
+  left: 100%;
   position: absolute;
 }
 
 .fishGreen {
   padding: 1.5%;
   top: 31%;
-  left: -35%;
+  left: -20%;
 }
 
 .fishHotpink {
@@ -348,6 +348,13 @@ section {
 .moveleft {
   -webkit-animation: moveleft 6s;
           animation: moveleft 6s;
+}
+
+.moveleft2 {
+  -webkit-animation: moveleft 6s;
+          animation: moveleft 6s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .moveright {
@@ -446,8 +453,8 @@ hr {
 }
 
 .movedown {
-  -webkit-animation: movedown 40s;
-          animation: movedown 40s;
+  -webkit-animation: movedown 50s;
+          animation: movedown 50s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
@@ -634,7 +641,7 @@ hr {
     background-color: green;
   }
   100% {
-    top: 7000px;
+    top: 6500px;
     left: 37vw;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -737,7 +744,7 @@ hr {
     background-color: green;
   }
   100% {
-    top: 7000px;
+    top: 6500px;
     left: 37vw;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);

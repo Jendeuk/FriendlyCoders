@@ -50,3 +50,23 @@ let scene9 = new ScrollMagic.Scene({triggerElement: ".fishLightblue"})
 
 .setClassToggle(".fishLightblue", "moveright")
 .addTo(controller);
+
+let die1 = new ScrollMagic.Scene({triggerElement: ".dieFishYellow"})
+
+.setClassToggle(".dieFishYellow", "moveleft")
+.addTo(controller);
+
+let die2 = new ScrollMagic.Scene({triggerElement: ".dieFishPurple"})
+
+.setClassToggle(".dieFishPurple", "moveleft")
+.addTo(controller);
+
+let die3 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
+
+.setClassToggle(".dieFishDarkBlue", "moveleft")
+.addTo(controller);
+
+let o2 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
+
+.setClassToggle(".o2", "moveleft2")
+.addTo(controller);
