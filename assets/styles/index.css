@@ -83,7 +83,7 @@ section {
 .ocean1 {
   background-color: red;
   width: 100vw;
-  height: 6000px;
+  height: 6200px;
   padding: 0;
   margin: 0;
   z-index: 2;
@@ -346,31 +346,26 @@ section {
   left: 100%;
 }
 
-.moveleft {
-  -webkit-animation: moveleft 6s;
-          animation: moveleft 6s;
+.svg {
+  padding-top: 24rem;
+  width: 180vw;
+  display: block;
+  z-index: 2;
 }
 
-.moveleft2 {
-  -webkit-animation: moveleft 6s;
-          animation: moveleft 6s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.moveright {
-  -webkit-animation: moveright 6s;
-          animation: moveright 6s;
-}
-
-.moveright2 {
-  -webkit-animation: moveright2 6s;
-          animation: moveright2 6s;
+.object--fish {
+  position: absolute;
+  left: 35vw;
+  top: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding: 5%;
 }
 
 hr {
   margin-bottom: 600px;
   background-color: white;
+  display: inline;
 }
 
 @media (orientation: portrait) {
@@ -455,25 +450,9 @@ hr {
   top: 63%;
 }
 
-.svg {
-  padding-top: 24rem;
-  width: 180vw;
-  display: block;
-  z-index: 2;
-}
-
-.object--fish {
-  position: absolute;
-  left: 35vw;
-  top: 900px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  padding: 5%;
-}
-
 .movedown {
-  -webkit-animation: movedown 50s;
-          animation: movedown 50s;
+  -webkit-animation: movedown 60s;
+          animation: movedown 60s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
@@ -960,6 +939,28 @@ hr {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+}
+
+.moveleft {
+  -webkit-animation: moveleft 6s;
+          animation: moveleft 6s;
+}
+
+.moveleft2 {
+  -webkit-animation: moveleft2 6s;
+          animation: moveleft2 6s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.moveright {
+  -webkit-animation: moveright 6s;
+          animation: moveright 6s;
+}
+
+.moveright2 {
+  -webkit-animation: moveright2 6s;
+          animation: moveright2 6s;
 }
 
 .box {
