@@ -71,6 +71,11 @@ let o2 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
 .setClassToggle(".o2", "moveleft2")
 .addTo(controller);
 
+ 
+let sustain = new ScrollMagic.Scene({triggerElement: ".sustain"})
+.setClassToggle(".sustain", "moveleft")
+.addTo(controller);
+
 let netright = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
 
 .setClassToggle(".fishNet", "moveright2")
@@ -86,5 +91,6 @@ let fishmove2 = new ScrollMagic.Scene({triggerElement: ".fishHotpink"})
 
 .setClassToggle(".fishLighblue", "moveleft2")
 .addTo(controller);
+
 
 
