@@ -359,7 +359,7 @@ section {
   top: 0px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  padding: 5%;
+  padding: 2%;
 }
 
 hr {
@@ -448,6 +448,15 @@ hr {
   text-align: center;
   width: 30%;
   top: 63%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::after, *::before {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
 }
 
 @media (prefers-color-scheme: light) {
