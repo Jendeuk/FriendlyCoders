@@ -1,26 +1,25 @@
 // .box--linn {
-    
+
 //     animation-name: move;
 //     animation-duration: 4s;
 //     animation-iteration-count: infinite;
-//     animation-direction: alternate; 
+//     animation-direction: alternate;
 //     animation-timing-function: ease-in-out;
 //     position: relative;
 // }
 
 // .box--jenny {
-    
-    
+
 //     animation: zoom-in-zoom-out 1s ease infinite;
 // }
 
 // .box--hallvard {
-    
+
 //     animation-name: box3;
 //     animation-duration: 1s;
 //     animation-iteration-count: infinite;
 //     animation-direction: alternate;
-    
+
 // }
 
 // @keyframes move {
@@ -51,15 +50,14 @@
 //     from {
 //       background: linear-gradient(skyblue, white);
 //       border-radius: 50%;
-  
+
 //       transform: rotatey(180deg) rotate(45deg);
-      
+
 //       }
 //       to {background: linear-gradient(skyblue, white);
 //       border-radius: 0%;
 //       rotate: 0deg;
-  
-  
+
 //     }
 //     to {
 //       rotate: 0deg;
@@ -68,69 +66,63 @@
 //     }
 // }
 
-
-
-
-
-
 @media (prefers-reduced-motion: reduce) {
-  *, *::after, *::before {
+  *,
+  *::after,
+  *::before {
     animation: none !important;
     transition: none !important;
   }
 }
 
 @media (prefers-color-scheme: light) {
-    #wave1 {
-        fill: map-get($map: $wave-colors, $key: blue-l--dark )
-    }
-    #wave2 {
-      fill: map-get($map: $wave-colors, $key: blue-m--dark )
+  #wave1 {
+    fill: map-get($map: $wave-colors, $key: blue-l--dark);
+  }
+  #wave2 {
+    fill: map-get($map: $wave-colors, $key: blue-m--dark);
   }
   #wave3 {
-    fill: map-get($map: $wave-colors, $key: blue-d--dark )
-    }
-
-    .ocean1 {
-      background: linear-gradient(map-get($map: $wave-colors, $key: blue-d--dark ),map-get($map: $wave-colors, $key: blue-vd--dark ) );
+    fill: map-get($map: $wave-colors, $key: blue-d--dark);
   }
 
-  body{
-    background-color: map-get($map: $wave-colors , $key: blue-vl--dark) ;
-    } 
+  .ocean1 {
+    background: linear-gradient(
+      map-get($map: $wave-colors, $key: blue-d--dark),
+      map-get($map: $wave-colors, $key: blue-vd--dark)
+    );
+  }
+
+  body {
+    background-color: map-get($map: $wave-colors, $key: blue-vl--dark);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   #wave1 {
-    fill: map-get($map: $wave-colors, $key: blue-l--light )
+    fill: map-get($map: $wave-colors, $key: blue-l--light);
+  }
+  #wave2 {
+    fill: map-get($map: $wave-colors, $key: blue-m--light);
+  }
+  #wave3 {
+    fill: map-get($map: $wave-colors, $key: blue-d--light);
+  }
+  .ocean1 {
+    background: linear-gradient(
+      map-get($map: $wave-colors, $key: blue-d--light),
+      map-get($map: $wave-colors, $key: blue-vd--light)
+    );
+  }
+  body {
+    background-color: map-get($map: $wave-colors, $key: blue-vl--light);
+  }
 }
-#wave2 {
-  fill: map-get($map: $wave-colors, $key: blue-m--light )
-}
-#wave3 {
-  fill: map-get($map: $wave-colors, $key: blue-d--light )
-}
-.ocean1 {
-  background: linear-gradient(map-get($map: $wave-colors, $key: blue-d--light ),map-get($map: $wave-colors, $key: blue-vd--light ) );
-}
-body{
-  background-color: map-get($map: $wave-colors , $key: blue-vl--light) ;
-  } 
-}
-
-
-
-
-
-
-
 
 .movedown {
   animation: movedown 60s;
   animation-timing-function: linear;
 }
-
-
 
 #wave1 {
   animation: ud 7s infinite alternate;
@@ -142,7 +134,6 @@ body{
 
 #wave3 {
   animation: ud 3s infinite alternate;
-
 }
 
 @keyframes ud {
@@ -155,83 +146,173 @@ body{
 }
 
 .turn {
-
   transform: rotateZ(40deg);
-  
 }
- 
 
- 
 @keyframes change {
-  0%, 100% {margin-top: 0px;}
-  10%, 30%, 50%, 70%, 90% {margin-top: 10px;}
-  20%, 40%, 60%, 80% {margin-top: 0px;}
+  0%,
+  100% {
+    margin-top: 0px;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    margin-top: 10px;
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.7;
+    margin-top: 0px;
   }
 
-  @keyframes fadeIn {
-    0% {opacity: 0.7; margin-top: 0px;}
-    
-    100% { margin-top: 10px; opacity: 1;}
-    
-    }
+  100% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+}
 
-    @keyframes movedown {
-      0% {top: 900; left: 35vw; transform: rotate(80deg);  }
-      5% { left: 37vw; transform: rotate(100deg); }
-      
-      10% { left: 32vw; transform: rotate(80deg); }
-      15% { left: 20vw; transform: rotate(80deg); }
-      20% { left: 32vw; transform: rotate(95deg); }
-      25% { left: 20vw; transform: rotate(90deg); }
-      30% { left: 24vw; transform: rotate(0deg); }
-      35% { left: 43vw; transform: rotate(90deg); }
-      40% { left: 32vw; transform: rotate(80deg); }
-      45% { left: 37vw; transform: rotate(100deg); }
-      50% { left: 35vw; transform: rotate(80deg); }
-      60% { left: 32vw; transform: rotate(100deg); }
-      70% { left: 37vw; transform: rotate(110deg); }
-      80% { left: 32vw; transform: rotate(80deg); }
-      90% { left: 37vw; transform: rotate(100deg); opacity: 1; }
-      100% {top: 6500px; left: 37vw; transform: rotate(90deg);
-      opacity: 0; }
-     
-      
-      
-      }
+@keyframes movedown {
+  0% {
+    top: 900;
+    left: 35vw;
+    transform: rotate(80deg);
+  }
+  5% {
+    left: 37vw;
+    transform: rotate(100deg);
+  }
 
-     
+  10% {
+    left: 32vw;
+    transform: rotate(80deg);
+  }
+  15% {
+    left: 20vw;
+    transform: rotate(80deg);
+  }
+  20% {
+    left: 32vw;
+    transform: rotate(95deg);
+  }
+  25% {
+    left: 20vw;
+    transform: rotate(90deg);
+  }
+  30% {
+    left: 24vw;
+    transform: rotate(0deg);
+  }
+  35% {
+    left: 43vw;
+    transform: rotate(90deg);
+  }
+  40% {
+    left: 32vw;
+    transform: rotate(80deg);
+  }
+  45% {
+    left: 37vw;
+    transform: rotate(100deg);
+  }
+  50% {
+    left: 35vw;
+    transform: rotate(80deg);
+  }
+  60% {
+    left: 32vw;
+    transform: rotate(100deg);
+  }
+  70% {
+    left: 37vw;
+    transform: rotate(110deg);
+  }
+  80% {
+    left: 32vw;
+    transform: rotate(80deg);
+  }
+  90% {
+    left: 37vw;
+    transform: rotate(100deg);
+    opacity: 1;
+  }
+  100% {
+    top: 6500px;
+    left: 37vw;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
 
-.bag, .straw2, .straw4, .soda3, .straw7, .bottle3, .straw, .soda2,
-.straw9{
+.bag,
+.straw2,
+.straw4,
+.soda3,
+.straw7,
+.bottle3,
+.straw,
+.soda2,
+.straw9 {
   animation: trash 10s infinite alternate;
 }
 
-.soda, .bottle, .straw3, .straw6, .bag1, .straw8, .straw5,.straw2, .bottle2{
+.soda,
+.bottle,
+.straw3,
+.straw6,
+.bag1,
+.straw8,
+.straw5,
+.straw2,
+.bottle2 {
   animation: change 10s infinite alternate;
 }
 
-@keyframes trash{
-  0%, 100% {transform: translateY(0);}
-  10%, 30%, 50%, 70%, 90% {transform: translateY(10px);}
-  20%, 40%, 60%, 80% {transform: translateY(-10px);}
+@keyframes trash {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(-10px);
+  }
 }
 
- .bubbles {
-   animation: bubbleup 5s infinite;
-   animation-timing-function: ease-in-out;
- }
-  
- @keyframes bubbleup {
-  0% {opacity: 0;}
+.bubbles {
+  animation: bubbleup 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bubbleup {
+  0% {
+    opacity: 0;
+  }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: 0; 
+    opacity: 0;
     transform: translateY(-60px);
-    
   }
- 
 }
 
 .danger {
@@ -239,7 +320,7 @@ body{
 }
 
 .fadein {
-  animation: fade 5s ;
+  animation: fade 5s;
 }
 
 @keyframes moveright {
@@ -275,14 +356,13 @@ body{
 }
 
 @keyframes fade {
-  0% {opacity: 0;}
-  
-  100% {
-    opacity: 1; 
-    ;
-    
+  0% {
+    opacity: 0;
   }
- 
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes moveleft {
@@ -308,7 +388,6 @@ body{
   animation: moveleft2 6s;
   animation-delay: 0.5s;
 }
-
 
 .moveright {
   animation: moveright 6s;

@@ -1,25 +1,33 @@
-
-
 $blue-vl: #d6ebf6;
 $blue-l: #b7dcfe;
 $blue-m: #7fc1fe;
-$blue-d: #4CA9FE;
+$blue-d: #4ca9fe;
 $blue-vd: #012546;
 
-$wave-colors:(
-  blue-vl--regular: ($blue-vl),
+$wave-colors: (
+  blue-vl--regular: (
+    $blue-vl,
+  ),
   blue-vl--light: lighten($blue-vl, 15%),
   blue-vl--dark: darken($blue-vl, 5%),
-  blue-l--regular: ($blue-l),
+  blue-l--regular: (
+    $blue-l,
+  ),
   blue-l--light: lighten($blue-l, 15%),
   blue-l--dark: darken($blue-l, 5%),
-  blue-m--regular: ($blue-m),
+  blue-m--regular: (
+    $blue-m,
+  ),
   blue-m--light: lighten($blue-m, 15%),
   blue-m--dark: darken($blue-m, 5%),
-  blue-d--regular: ($blue-d),
+  blue-d--regular: (
+    $blue-d,
+  ),
   blue-d--light: lighten($blue-d, 15%),
   blue-d--dark: darken($blue-d, 5%),
-  blue-vd--regular: ($blue-vd),
+  blue-vd--regular: (
+    $blue-vd,
+  ),
   blue-vd--light: lighten($blue-vd, 15%),
   blue-vd--dark: darken($blue-vd, 5%),
 );
