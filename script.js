@@ -1,100 +1,89 @@
 let controller = new ScrollMagic.Controller();
 
-let scene = new ScrollMagic.Scene({triggerElement: ".object--fish"})
+let scene = new ScrollMagic.Scene({ triggerElement: ".object--fish" })
 
-.setClassToggle(".object--fish", "movedown")
-.addTo(controller);
+  .setClassToggle(".object--fish", "movedown")
+  .addTo(controller);
 
+let scene3 = new ScrollMagic.Scene({ triggerElement: ".skull" })
 
+  .setClassToggle(".skull", "fadein")
+  .addTo(controller);
 
-let scene3 = new ScrollMagic.Scene({triggerElement: ".skull"})
+let scene2 = new ScrollMagic.Scene({ triggerElement: ".fishBlue" })
 
-.setClassToggle(".skull", "fadein")
-.addTo(controller);
+  .setClassToggle(".fishBlue", "moveleft")
+  .addTo(controller);
 
+let scene7 = new ScrollMagic.Scene({ triggerElement: ".fishGreen" })
 
- 
- 
+  .setClassToggle(".fishGreen", "moveright")
+  .addTo(controller);
 
-let scene2 = new ScrollMagic.Scene({triggerElement: ".fishBlue"})
+let scene4 = new ScrollMagic.Scene({ triggerElement: ".fishPink" })
 
-.setClassToggle(".fishBlue", "moveleft")
-.addTo(controller);
+  .setClassToggle(".fishPink", "moveleft")
+  .addTo(controller);
 
-let scene7 = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
+let scene6 = new ScrollMagic.Scene({ triggerElement: ".fishYellow" })
 
-.setClassToggle(".fishGreen", "moveright")
-.addTo(controller);
+  .setClassToggle(".fishYellow", "moveleft")
+  .addTo(controller);
 
-let scene4 = new ScrollMagic.Scene({triggerElement: ".fishPink"})
+let scene5 = new ScrollMagic.Scene({ triggerElement: ".fishRed" })
 
-.setClassToggle(".fishPink", "moveleft")
-.addTo(controller);
+  .setClassToggle(".fishRed", "moveleft")
+  .addTo(controller);
 
-let scene6 = new ScrollMagic.Scene({triggerElement: ".fishYellow"})
+let scene8 = new ScrollMagic.Scene({ triggerElement: ".fishGreen" })
 
-.setClassToggle(".fishYellow", "moveleft")
-.addTo(controller);
+  .setClassToggle(".fishHotpink", "moveright")
+  .addTo(controller);
 
-let scene5 = new ScrollMagic.Scene({triggerElement: ".fishRed"})
+let scene9 = new ScrollMagic.Scene({ triggerElement: ".fishGreen" })
 
-.setClassToggle(".fishRed", "moveleft")
-.addTo(controller);
+  .setClassToggle(".fishLightblue", "moveright")
+  .addTo(controller);
 
-let scene8 = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
+let die1 = new ScrollMagic.Scene({ triggerElement: ".dieFishYellow" })
 
-.setClassToggle(".fishHotpink", "moveright")
-.addTo(controller);
+  .setClassToggle(".dieFishYellow", "moveleft")
+  .addTo(controller);
 
-let scene9 = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
+let die2 = new ScrollMagic.Scene({ triggerElement: ".dieFishPurple" })
 
-.setClassToggle(".fishLightblue", "moveright")
-.addTo(controller);
+  .setClassToggle(".dieFishPurple", "moveleft")
+  .addTo(controller);
 
-let die1 = new ScrollMagic.Scene({triggerElement: ".dieFishYellow"})
+let die3 = new ScrollMagic.Scene({ triggerElement: ".dieFishDarkBlue" })
 
-.setClassToggle(".dieFishYellow", "moveleft")
-.addTo(controller);
+  .setClassToggle(".dieFishDarkBlue", "moveleft")
+  .addTo(controller);
 
-let die2 = new ScrollMagic.Scene({triggerElement: ".dieFishPurple"})
+let o2 = new ScrollMagic.Scene({ triggerElement: ".dieFishDarkBlue" })
 
-.setClassToggle(".dieFishPurple", "moveleft")
-.addTo(controller);
+  .setClassToggle(".o2", "moveleft")
+  .addTo(controller);
 
-let die3 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
+let sustain = new ScrollMagic.Scene({ triggerElement: ".sustain" })
+  .setClassToggle(".sustain", "moveleft")
+  .addTo(controller);
 
-.setClassToggle(".dieFishDarkBlue", "moveleft")
-.addTo(controller);
+let sustain2 = new ScrollMagic.Scene({ triggerElement: ".sustain2" })
+  .setClassToggle(".sustain2", "moveright")
+  .addTo(controller);
 
-let o2 = new ScrollMagic.Scene({triggerElement: ".dieFishDarkBlue"})
+let netright = new ScrollMagic.Scene({ triggerElement: ".fishGreen" })
 
-.setClassToggle(".o2", "moveleft")
-.addTo(controller);
+  .setClassToggle(".fishNet", "moveright2")
+  .addTo(controller);
 
- 
-let sustain = new ScrollMagic.Scene({triggerElement: ".sustain"})
-.setClassToggle(".sustain", "moveleft")
-.addTo(controller);
+let fishmove = new ScrollMagic.Scene({ triggerElement: ".fishHotpink" })
 
-let sustain2 = new ScrollMagic.Scene({triggerElement: ".sustain2"})
-.setClassToggle(".sustain2", "moveright")
-.addTo(controller);
+  .setClassToggle(".fishNet", "moveleft2")
+  .addTo(controller);
 
-let netright = new ScrollMagic.Scene({triggerElement: ".fishGreen"})
+let fishmove2 = new ScrollMagic.Scene({ triggerElement: ".fishHotpink" })
 
-.setClassToggle(".fishNet", "moveright2")
-.addTo(controller);
-
-let fishmove = new ScrollMagic.Scene({triggerElement: ".fishHotpink"})
-
-.setClassToggle(".fishNet", "moveleft2")
-.addTo(controller);
-
-
-let fishmove2 = new ScrollMagic.Scene({triggerElement: ".fishHotpink"})
-
-.setClassToggle(".fishLighblue", "moveleft2")
-.addTo(controller);
-
-
-
+  .setClassToggle(".fishLighblue", "moveleft2")
+  .addTo(controller);
