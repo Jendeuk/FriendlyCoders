@@ -88,29 +88,43 @@
 //     }
 // }
 
-// @media (prefers-color-scheme: light) {
-//     .box--linn {
-//         background-color: map-get($map: $colors, $key: linn--dark )
-//     }
-//     .box--jenny {
-//         background-color: map-get($map: $colors, $key: jenny--dark );
-//     }
-//     .box--hallvard {
-//         background-color: skyblue;
-//     }
-// }
+@media (prefers-color-scheme: light) {
+    #wave1 {
+        fill: map-get($map: $wave-colors, $key: blue-l--dark )
+    }
+    #wave2 {
+      fill: map-get($map: $wave-colors, $key: blue-m--dark )
+  }
+  #wave3 {
+    fill: map-get($map: $wave-colors, $key: blue-d--dark )
+    }
 
-// @media (prefers-color-scheme: dark) {
-//     .box--linn {
-//         background-color: map-get($map: $colors, $key: linn--light);
-//     }
-//     .box--jenny {
-//         background-color: map-get($map: $colors, $key: jenny--light);
-//     }
-//     .box--hallvard{
-//         background-color: skyblue;
-//     }
-// }
+    .ocean1 {
+      background: linear-gradient(map-get($map: $wave-colors, $key: blue-d--dark ),map-get($map: $wave-colors, $key: blue-vd--dark ) );
+  }
+
+  body{
+    background-color: map-get($map: $wave-colors , $key: blue-vl--dark) ;
+    } 
+}
+
+@media (prefers-color-scheme: dark) {
+  #wave1 {
+    fill: map-get($map: $wave-colors, $key: blue-l--light )
+}
+#wave2 {
+  fill: map-get($map: $wave-colors, $key: blue-m--light )
+}
+#wave3 {
+  fill: map-get($map: $wave-colors, $key: blue-d--light )
+}
+.ocean1 {
+  background: linear-gradient(map-get($map: $wave-colors, $key: blue-d--light ),map-get($map: $wave-colors, $key: blue-vd--light ) );
+}
+body{
+  background-color: map-get($map: $wave-colors , $key: blue-vl--light) ;
+  } 
+}
 
 
 

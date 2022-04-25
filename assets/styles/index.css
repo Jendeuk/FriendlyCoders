@@ -450,6 +450,44 @@ hr {
   top: 63%;
 }
 
+@media (prefers-color-scheme: light) {
+  #wave1 {
+    fill: #9ed0fe;
+  }
+  #wave2 {
+    fill: #66b5fe;
+  }
+  #wave3 {
+    fill: #339dfe;
+  }
+  .ocean1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#339dfe), to(#01182d));
+    background: linear-gradient(#339dfe, #01182d);
+  }
+  body {
+    background-color: #c1e1f1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #wave1 {
+    fill: white;
+  }
+  #wave2 {
+    fill: #cbe6ff;
+  }
+  #wave3 {
+    fill: #98cefe;
+  }
+  .ocean1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#98cefe), to(#024d91));
+    background: linear-gradient(#98cefe, #024d91);
+  }
+  body {
+    background-color: white;
+  }
+}
+
 .movedown {
   -webkit-animation: movedown 60s;
           animation: movedown 60s;
@@ -969,15 +1007,24 @@ hr {
   margin: 100px;
 }
 
-.ocean1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4ca9fe), to(#00274b));
-  background: linear-gradient(#4ca9fe, #00274b);
+/* If we had not used prefers light and dark mode we would have made the colors like this */
+/* .ocean1 {
+    background: linear-gradient(map-get($map: $sky-background, $key: sky--light ),map-get($map: $sky-background, $key: sky--dark ) );
+} */
+/* body{
+background-color: map-get($map: $wave-colors , $key: blue-vl--regular) ;
+}  */
+/* #wave1{
+    fill: map-get($map: $wave-colors , $key: blue-l--regular);
 }
 
-body {
-  background-color: #d6ebf6;
+#wave2{
+    fill: map-get($map: $wave-colors , $key: blue-m--regular);
 }
 
+#wave3{
+    fill: map-get($map: $wave-colors , $key: blue-d--regular);
+} */
 h1 {
   font-size: 50px;
 }
